@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landingPage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://ornate-ui.netlify.app/">
+
+
+    <title>landing Page</title>
+</head>
+
+<body>
+    <!-- landing page -->
+
+    <nav class="library-sidebar" id="sidebar-menu">
+
+        <h2>Components</h2>
+        <a href="#" class="close-Btn" onclick="closeBar()">×</a>
+        <a href="">Avatar</a>
+        <a href="">Alert</a>
+        <a href="">Badge</a>
+        <a href="">Button</a>
+        <a href="">Card</a>
+        <a href="">Image</a>
+        <a href="">Input</a>
+
+    </nav>
+
+
+    <div id="main">
+        <header class="header">
+            <span class='material-icons' id="open-Btn" onClick="openBar()">menu</span>
+            <h2 id="hero"><span style="color:#ff7416">O</span>rnate UI</h2>
+        </header>
+    </div>
+    <main id="home">
+        <div class="description">
+            <h2 style="font-size:2.5rem;">The <strong style="color:#ff7416">UI Library</strong> you always wanted</h2>
+            <p>Ornate is a simple but elegant UI <br>Library which provides simple components<br> enabling you to build your own elegant <br>design system and develop applications faster </p>
+        </div>
+
+        <p class="installation-para">To Quickly Get started with the Components kindly place the below link in the head section of your html page</p>
+        <div class="installation">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28166%2C121%2C175%2C1%29&t=vscode&wt=none&l=htmlmixed&width=700.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=177%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fornate-ui.netlify.app%252Fstyle.css%2522%253E%2520%2520%2520"
+                style="width: 700px; height: 112px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="" class="installation-code">
+
+        </div>
+    </main>
+    <footer class="footer">
+        <p>made with ❤ by preetha</p>
+        <ul>
+            <li id="footer-links">
+                <a href="https://github.com/preethasri">
+                    <i class='fa fa-github' style="padding:5px 5px 5px 5px;font-size:2.5rem;color:white;"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/preetha-s-2a9637217/">
+                    <i class='fa fa-linkedin-square' style="padding:5px 5px 5px 5px;font-size:2.5rem;color:white;"></i>
+                </a>
+                <a href="https://twitter.com/Preethasri6">
+                    <i class='fa fa-twitter' style="padding:5px 5px 5px 5px;font-size:2.5rem;color:white;"></i>
+                </a>
+            </li>
+        </ul>
+        <p style="font-size:16px;">copyrights©2021|OrnateUI </p>
+    </footer>
+
+
+
+
+
+
+    <script>
+        function openBar() {
+            document.getElementById("sidebar-menu").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("home").style.marginLeft = "250px"
+        }
+
+        function closeBar() {
+            document.getElementById("sidebar-menu").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("home").style.marginLeft = "0"
+        }
+    </script>
+</body>
+
+</html>
