@@ -16,13 +16,6 @@ a {
     color: black;
 }
 
-#hero {
-    display: inline;
-    line-height: 45px;
-    margin: 0;
-    font-size: 2rem;
-}
-
 
 /* dismissible-sidebar */
 
@@ -35,7 +28,6 @@ a {
     left: 0;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
 }
 
 .library-sidebar a {
@@ -59,6 +51,9 @@ a {
     margin-left: 50px;
 }
 
+
+/* hamburger menu */
+
 .open-Btn {
     font-size: 24px;
     cursor: pointer;
@@ -71,16 +66,31 @@ a {
     cursor: pointer;
 }
 
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
 
-.header {
+/* header nav */
+
+#main {
     transition: margin-left .5s;
     padding: 16px;
     border-bottom: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
 }
+
+#social-media-links {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+#social-media-links li {
+    list-style: none;
+    display: inline;
+    font-size: 20px;
+}
+
+
+/* content */
 
 .description {
     text-align: center;
@@ -103,11 +113,25 @@ a {
     margin-top: 30px;
 }
 
-.footer {
-    background-color: black;
-    width: 100%;
-    text-align: center;
-    min-height: 100px;
-    margin-top: auto;
-    color: white;
+
+/* media queries */
+
+@media only screen and (min-width: 1200px) {
+    #sidebar-menu {
+        width: 250px;
+    }
+    #main,
+    #home,
+    .footer {
+        margin-left: 250px;
+    }
+    #open-Btn,
+    .library-sidebar .close-Btn {
+        display: none;
+    }
+    #hero,
+    #social-media-links li {
+        font-size: 2rem;
+        line-height: 45px;
+    }
 }
