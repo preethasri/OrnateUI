@@ -17,6 +17,7 @@
     <!-- landing page -->
 
     <nav class="library-sidebar" id="sidebar-menu">
+        <a href="" style="font-size:24px;padding-left:0;font-weight:bold;">Getting Started</a>
 
         <h2>Components</h2>
         <a href="#" class="close-Btn" onclick="closeBar()">×</a>
@@ -32,10 +33,28 @@
 
 
     <div id="main">
-        <header class="header">
-            <span class='material-icons' id="open-Btn" onClick="openBar()">menu</span>
-            <h2 id="hero"><span style="color:#ff7416">O</span>rnate UI</h2>
-        </header>
+        <span class='material-icons' id="open-Btn" onClick="openBar()">menu</span>
+        <h2 id="hero"><span style="color:#ff7416">O</span>rnate UI</h2>
+        <div id="social-media-links">
+            <ul>
+                <li id="github-link">
+                    <a href="https://github.com/preethasri">
+                        <i class='fa fa-github'></i>
+                    </a>
+                </li>
+                <li id="linkedin-link">
+                    <a href="https://www.linkedin.com/in/preetha-s-2a9637217/">
+                        <i class='fa fa-linkedin-square'></i>
+                    </a>
+                </li>
+                <li id="twitter link">
+                    <a href="https://twitter.com/Preethasri6">
+                        <i class='fa fa-twitter'></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
     </div>
     <main id="home">
         <div class="description">
@@ -50,29 +69,6 @@
 
         </div>
     </main>
-    <footer class="footer">
-        <p>made with ❤ by preetha</p>
-        <ul>
-            <li id="footer-links">
-                <a href="https://github.com/preethasri">
-                    <i class='fa fa-github' style="padding:5px 5px 5px 5px;font-size:2.5rem;color:white;"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/preetha-s-2a9637217/">
-                    <i class='fa fa-linkedin-square' style="padding:5px 5px 5px 5px;font-size:2.5rem;color:white;"></i>
-                </a>
-                <a href="https://twitter.com/Preethasri6">
-                    <i class='fa fa-twitter' style="padding:5px 5px 5px 5px;font-size:2.5rem;color:white;"></i>
-                </a>
-            </li>
-        </ul>
-        <p style="font-size:16px;">copyrights©2021|OrnateUI </p>
-    </footer>
-
-
-
-
-
-
     <script>
         function openBar() {
             document.getElementById("sidebar-menu").style.width = "250px";
