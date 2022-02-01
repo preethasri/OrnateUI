@@ -4,8 +4,26 @@
     box-sizing: border-box;
 }
 
+#component-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+#component-description {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
 #side-heading {
-    margin-top: 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+#side-heading-description {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
 }
 
 
@@ -206,5 +224,8 @@
     .avatar-images {
         gap: 0;
         margin-left: 70px;
+    }
+    #avatar-code-snippet {
+        display: none;
     }
 }
