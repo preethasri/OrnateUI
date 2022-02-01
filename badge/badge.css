@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#side-heading {
+    margin-top: 15px;
+}
+
+#badge-code-snippet {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+
+/* sidebar css */
+
+.library-sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.library-sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    display: block;
+}
+
+.library-sidebar a:hover {
+    color: #ff7416;
+    font-weight: bold;
+}
+
+.library-sidebar .close-Btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+
+/* hamburger menu */
+
+.open-Btn {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 15px;
+    width: 100%;
+    display: inline;
+}
+
+.open-Btn:hover {
+    cursor: pointer;
+}
+
+
+/* header nav */
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+#badge-heading,
+#badge-container {
+    transition: margin-left .5s;
+}
+
+
+/* badge on avatar*/
+
+#badge-images {
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px 5px;
+}
+
+#avatar1-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#avatar2-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#avatar3-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+#avatar-badge {
+    position: relative;
+    text-align: center;
+    display: inline;
+}
+
+#status-badge-online {
+    background-color: darkgreen;
+    width: 15px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: block;
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+}
+
+#status-badge-offline {
+    background-color: red;
+    width: 15px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: block;
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+}
+
+#status-badge-away {
+    background-color: yellow;
+    width: 15px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: block;
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+}
+
+
+/* badge on icon */
+
+#badge-icons {
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px 5px;
+}
+
+#icon-badge {
+    position: relative;
+    text-align: center;
+    display: inline;
+}
+
+#mail-icon {
+    width: 50px;
+    height: 50px;
+}
+
+#notification-icon {
+    width: 50px;
+    height: 50px;
+}
+
+#add-to-cart-icon {
+    width: 50px;
+    height: 50px;
+}
+
+#mail-badge {
+    background-color: blueviolet;
+    width: 25px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: -18px;
+}
+
+#notification-badge {
+    background-color: blueviolet;
+    width: 25px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+    display: block;
+    position: absolute;
+    right: 2px;
+    top: -16px;
+}
+
+#add-to-cart-badge {
+    background-color: blueviolet;
+    width: 25px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: -20px;
+}
+
+
+/* badge on buttons */
+
+#badge-buttons {
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px 5px;
+}
+
+#button-badge {
+    position: relative;
+    text-align: center;
+    display: inline;
+    padding: 5px 5px 5px 5px;
+}
+
+#primary-btn {
+    color: white;
+    background-color: #ff7416;
+}
+
+#secondary-btn {
+    background-color: blue;
+    color: white;
+}
+
+#tweet-btn {
+    background-color: royalblue;
+    color: white;
+}
+
+#primaryBtn-badge {
+    background-color: blue;
+    width: 25px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+    display: block;
+    position: absolute;
+    right: -5px;
+    top: -7px;
+}
+
+#secondaryBtn-badge {
+    background-color: #ff7416;
+    width: 25px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+    display: block;
+    position: absolute;
+    right: -5px;
+    top: -7px;
+}
+
+#tweetBtn-badge {
+    background-color: saddlebrown;
+    width: 25px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+    display: block;
+    position: absolute;
+    right: -5px;
+    top: -7px;
+}
+
+
+/* media queries */
+
+@media only screen and (min-width: 1200px) {
+    #sidebar-menu {
+        width: 250px;
+    }
+    #badge-container,
+    #badge-heading {
+        margin-left: 250px;
+    }
+    #open-Btn,
+    .library-sidebar .close-Btn {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {}
+
+
+}

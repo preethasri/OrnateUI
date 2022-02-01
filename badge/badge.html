@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Badge</title>
+    <link href="badge.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+
+<body>
+    <!-- responsive sidebar -->
+    <nav class="library-sidebar" id="sidebar-menu">
+        <a href="" style="font-size:24px;padding-left:0;font-weight:bold;">Getting Started</a>
+
+        <h2>Components</h2>
+        <a href="#" class="close-Btn" onclick="closeBar()">×</a>
+        <a href="/avatar/avatar.html">Avatar</a>
+        <a href="">Alert</a>
+        <a href="/badge/badge.html">Badge</a>
+        <a href="">Button</a>
+        <a href="">Card</a>
+        <a href="">Image</a>
+        <a href="">Input</a>
+
+    </nav>
+
+
+    <div id="main">
+        <span class='material-icons' id="open-Btn" onClick="openBar()">menu</span>
+    </div>
+    <!-- badge container -->
+    <header id="badge-heading">
+        <h1>Badge</h1>
+        <p>Badges are used to create a badge attribute with value.it is used inside icons,avatars and text </p>
+
+    </header>
+    <main id="badge-container">
+        <!-- badges on avatar -->
+        <div id="badges-on-avatars">
+            <h2 id="side-heading">Badges on Avatars</h2>
+            <div id="badge-images">
+                <div id="avatar-badge">
+                    <img src="/images/avatar2.jpg" alt="" id="avatar1-img">
+                    <span id="status-badge-online"></span>
+                </div>
+                <div id="avatar-badge">
+                    <img src="/images/avatar2.jpg" alt="" id="avatar2-img">
+                    <span id="status-badge-offline"></span>
+                </div>
+                <div id="avatar-badge">
+                    <img src="/images/avatar2.jpg" alt="" id="avatar3-img">
+                    <span id="status-badge-away"></span>
+                </div>
+            </div>
+        </div>
+        <div id="badge-code-snippet">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28189%2C16%2C224%2C1%29&t=vscode&wt=none&l=htmlmixed&width=588.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=161%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520id%253D%2522avatar-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Favatar2.jpg%2522%2520alt%253D%2522%2522%2520id%253D%2522avatar1-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520id%253D%2522status-badge-online%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                style="width: 574px; height: 172px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+        </div>
+        <!-- badges on icons -->
+        <div id="badges-on-icons">
+            <h2 id="side-heading">Badges on Icons</h2>
+            <div id="badge-icons">
+                <div id="icon-badge">
+                    <span class='material-icons' id="mail-icon">mail_outline</span>
+
+                    <span id="mail-badge">2</span>
+                </div>
+                <div id="icon-badge">
+                    <span class='material-icons' id="notification-icon">notifications</span>
+                    <span id="notification-badge">5</span>
+                </div>
+                <div id="icon-badge">
+                    <span class='material-icons' id="add-to-cart-icon">add_shopping_cart</span>
+                    <span id="add-to-cart-badge">7</span>
+                </div>
+            </div>
+        </div>
+        <div id="badge-code-snippet">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28189%2C16%2C224%2C1%29&t=vscode&wt=none&l=htmlmixed&width=588.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=161%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520id%253D%2522icon-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%27material-icons%27%2520id%253D%2522mail-icon%2522%253Email_outline%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520id%253D%2522mail-badge%2522%253E2%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                style="width: 535px; height: 206px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+        </div>
+        <!-- badges on buttons -->
+        <div id="badges-on-buttons">
+            <h2 id="side-heading">Badges on Buttons</h2>
+            <div id="badge-buttons">
+                <div id="button-badge">
+                    <button id="primary-btn">AddToCart</button>
+                    <span id="primaryBtn-badge">4</span>
+                </div>
+                <div id="button-badge">
+                    <button id="secondary-btn">BuyNow</button>
+                    <span id="secondaryBtn-badge">8</span>
+
+                </div>
+                <div id="button-badge">
+                    <button id="tweet-btn">Tweet</button>
+                    <span id="tweetBtn-badge">2</span>
+                </div>
+            </div>
+        </div>
+        <div id="badge-code-snippet">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28189%2C16%2C224%2C1%29&t=vscode&wt=none&l=htmlmixed&width=588.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=161%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520id%253D%2522button-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520id%253D%2522primary-btn%2522%253EAddToCart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520id%253D%2522primaryBtn-badge%2522%253E4%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="width: 589px; height: 157px; border:0; transform: scale(1); overflow:hidden; margin-bottom:5px;" sandbox="allow-scripts allow-same-origin" type="">
+        </div>
+    </main>
+    <script>
+        function openBar() {
+            document.getElementById("sidebar-menu").style.width = "250px";
+            document.getElementById("badge-heading").style.marginLeft = "250px";
+            document.getElementById("badge-container").style.marginLeft = "250px"
+            document.getElementById("open-Btn").style.marginLeft = "250px";
+
+        }
+
+        function closeBar() {
+            document.getElementById("sidebar-menu").style.width = "0";
+            document.getElementById("badge-heading").style.marginLeft = "0";
+            document.getElementById("badge-container").style.marginLeft = "0";
+            document.getElementById("open-Btn").style.marginLeft = "0px";
+        }
+    </script>
+</body>
+
+</html>
