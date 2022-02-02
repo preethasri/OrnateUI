@@ -30,6 +30,8 @@
 #btn-output {
     display: flex;
     justify-content: center;
+    align-items: center;
+    align-content: center;
     margin-top: 2rem;
     margin-bottom: 1.5rem;
     flex-wrap: wrap;
@@ -142,7 +144,7 @@
 }
 
 #contained-warning-button {
-    background-color: #FBD428;
+    background-color: rgb(212, 180, 37);
     color: white;
     padding: 1rem 2rem;
     border-radius: 3px;
@@ -229,11 +231,12 @@
     border: none;
     text-align: center;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
     font-size: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
