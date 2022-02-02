@@ -4,8 +4,26 @@
     box-sizing: border-box;
 }
 
+#component-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+#component-description {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
 #side-heading {
-    margin-top: 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+#side-heading-description {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
 }
 
 #badge-code-snippet {
@@ -302,7 +320,8 @@
     }
 }
 
-@media only screen and (max-width: 600px) {}
-
-
+@media only screen and (max-width: 600px) {
+    #badge-code-snippet {
+        display: none;
+    }
 }
