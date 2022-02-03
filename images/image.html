@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>image</title>
+    <link href="image.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Inter:wght@200;400;600;700&family=Mulish&family=Nunito+Sans:wght@300&family=Ubuntu:wght@300&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Responsive sidebar -->
+    <nav class="library-sidebar" id="sidebar-menu">
+        <a href="" style="font-size:24px;padding-left:0;font-weight:bold;">Getting Started</a>
+
+        <h2>Components</h2>
+        <a href="#" class="close-Btn" onclick="closeBar()">×</a>
+        <a href="">Avatar</a>
+        <a href="">Alert</a>
+        <a href="">Badge</a>
+        <a href="">Button</a>
+        <a href="">Card</a>
+        <a href="/images/image.html">Image</a>
+        <a href="/input/input.html">Input</a>
+
+    </nav>
+
+    <div id="main">
+        <span class='material-icons' id="open-Btn" onClick="openBar()">menu</span>
+    </div>
+    <!-- image  -->
+    <header id="image-heading">
+        <div id="component-title">
+            Images
+        </div>
+        <div id="component-description">
+            Images play an important role in any webpage. ... CSS plays a good role to control image display. You can set the following image properties using CSS
+        </div>
+    </header>
+    <main id="image-container">
+        <div id="side-heading">Responsive Image</div>
+        <div id="side-heading-description">To make an image responsive, you need to give a new value to its width property. Then the height of the image will adjust itself automatically</div>
+
+        <div class="images">
+
+            <img src="/img/natureImg.jpg" alt="" id="res-image">
+
+        </div>
+        <div class="image-code-snippet">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28189%2C16%2C224%2C1%29&t=vscode&wt=none&l=htmlmixed&width=608.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=177%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522natureImg.jpg%2522%2520alt%253D%2522%2522%2520id%253D%2522res-image%2522%253E"
+                style="width: 608px; height: 85px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+        </div>
+        <div id="side-heading">Round Image</div>
+        <div id="side-heading-description">The main CSS property responsible for the circular shape is the border-radius property. Setting the radius of the corners to 50% of the width/height results in a circle.</div>
+        <div class="images">
+
+            <img src="/img/natureImg.jpg" alt="" id="round-image">
+
+        </div>
+        <div class="image-code-snippet">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28189%2C16%2C224%2C1%29&t=vscode&wt=none&l=htmlmixed&width=608.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=177%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522natureImg.jpg%2522%2520alt%253D%2522%2522%2520id%253D%2522round-image%2522%253E"
+                style="width: 608px; height: 85px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+        </div>
+    </main>
+    <script>
+        function openBar() {
+            document.getElementById("sidebar-menu").style.width = "250px";
+            document.getElementById("image-heading").style.marginLeft = "250px";
+            document.getElementById("image-container").style.marginLeft = "250px"
+            document.getElementById("open-Btn").style.marginLeft = "250px";
+
+        }
+
+        function closeBar() {
+            document.getElementById("sidebar-menu").style.width = "0";
+            document.getElementById("image-heading").style.marginLeft = "0";
+            document.getElementById("image-container").style.marginLeft = "0";
+            document.getElementById("open-Btn").style.marginLeft = "0px";
+        }
+    </script>
+</body>
+
+</html>
