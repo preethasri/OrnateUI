@@ -100,7 +100,7 @@
     align-items: center;
 }
 
-#card-info {
+.card-info {
     box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 300px;
@@ -113,7 +113,7 @@
 
 /* vertical card */
 
-#card-info:hover {
+.card-info:hover {
     z-index: 7;
     transform: scale(1.05)
 }

@@ -41,7 +41,7 @@
         <div id="side-heading-description">vertical cards are used as product cards,business cards etc..</div>
         <div id="cards">
             <!-- vertical card -->
-            <div id="card-info">
+            <div class="card-info">
                 <div id="card">
                     <div id="img">
                         <img src="/images/iphone2.jpg" alt="" id="vertical-img">
@@ -77,7 +77,7 @@
         <div id="side-heading-description">badges are used to contain a bit and useful information about the card</div>
         <div id="cards">
 
-            <div id="card-info">
+            <div class="card-info">
 
                 <div id="card">
                     <div id="badge-card">
@@ -116,7 +116,7 @@
         <div id="side-heading">card with dismiss</div>
         <div id="side-heading-description">card with dismiss are used to close the cards</div>
         <div id="cards">
-            <div id="card-info">
+            <div class="card-info">
                 <div id="card-dismiss">
                     <i class="fa fa-close" id="close-btn"></i>
                 </div>
@@ -213,7 +213,7 @@
         <div id="side-heading-description">card-img-overlay is used to set the image as background image of the card and add text over the image.</div>
         <div id="cards">
 
-            <div id="card-info">
+            <div class="card-info">
 
                 <div id="card">
                     <div id="text-overlay-card">
@@ -256,6 +256,8 @@
             document.getElementById("card-heading").style.marginLeft = "250px";
             document.getElementById("card-container").style.marginLeft = "250px"
             document.getElementById("open-Btn").style.marginLeft = "250px";
+            document.getElementById("horizontal-card").style.display="none"
+            document.getElementById("text-card").style.display="none"
 
         }
 
@@ -264,6 +266,8 @@
             document.getElementById("card-heading").style.marginLeft = "0";
             document.getElementById("card-container").style.marginLeft = "0";
             document.getElementById("open-Btn").style.marginLeft = "0px";
+            document.getElementById("horizontal-card").style.display="block"
+               document.getElementById("text-card").style.display="block"
         }
     </script>
 </body>
