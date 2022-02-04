@@ -1,0 +1,169 @@
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#component-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+#component-description {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+#side-heading {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+#side-heading-description {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* sidebar */
+
+.library-sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.library-sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    display: block;
+}
+
+.library-sidebar a:hover {
+    color: #ff7416;
+    font-weight: bold;
+}
+
+.library-sidebar .close-Btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+
+/* hamburger menu */
+
+.open-Btn {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 15px;
+    width: 100%;
+    display: inline;
+}
+
+.open-Btn:hover {
+    cursor: pointer;
+}
+
+
+/* header nav */
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+#input-heading,
+#input-container {
+    transition: margin-left .5s;
+}
+
+
+/* inputs */
+
+.inputs {
+    display: flex;
+    justify-content: center;
+}
+
+.input-box label {
+    font-weight: bold;
+}
+
+
+/* textbox input */
+
+.user-details .input-box input {
+    width: 100%;
+    height: 45px;
+    background: #f1f1f1;
+    padding: 15px;
+    margin: 5px 0 22px 16px;
+    border: none;
+}
+
+ ::placeholder {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+/* error validation */
+
+.err-message {
+    color: red;
+    font-weight: bold;
+    margin-top: -1rem;
+}
+
+#confirm-password {
+    border: 2px solid red;
+}
+
+.radio-input label,
+.checkbox-input label {
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.checkbox-input {
+    margin-bottom: 30px;
+}
+
+.input-code-snippet {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+@media only screen and (min-width: 1200px) {
+    #sidebar-menu {
+        width: 250px;
+    }
+    #input-container,
+    #input-heading {
+        margin-left: 250px;
+    }
+    #open-Btn,
+    .library-sidebar .close-Btn {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .input-code-snippet {
+        display: none;
+    }
+}
