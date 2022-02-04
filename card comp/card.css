@@ -1,0 +1,334 @@
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#component-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+#component-description {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* sidebar */
+
+#side-heading {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#side-heading-description {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.library-sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.library-sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    display: block;
+}
+
+.library-sidebar a:hover {
+    color: #ff7416;
+    font-weight: bold;
+}
+
+.library-sidebar .close-Btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+
+/* hamburger menu */
+
+.open-Btn {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 15px;
+    width: 100%;
+    display: inline;
+}
+
+.open-Btn:hover {
+    cursor: pointer;
+}
+
+
+/* header nav */
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+#card-heading,
+#card-container {
+    transition: margin-left .5s;
+}
+
+
+/* cards */
+
+#cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-info {
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+
+/* vertical card */
+
+.card-info:hover {
+    z-index: 7;
+    transform: scale(1.05)
+}
+
+#img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#vertical-img {
+    width: 70%;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+#price-ratings {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+#rating i {
+    color: #FF9529;
+}
+
+
+/* badge on container */
+
+#badge-card {
+    position: relative;
+}
+
+#badge-on-card {
+    position: absolute;
+    background-color: maroon;
+    color: white;
+    left: 40px;
+    top: 0;
+    text-align: center;
+    border-radius: 12px;
+    padding: 5px 5px;
+}
+
+
+/* card dismiss*/
+
+#card-dismiss {
+    position: relative;
+}
+
+#close-btn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 1.2rem;
+    color: red;
+}
+
+
+/* horizontal card */
+
+#horizontal-card {
+    width: 400px;
+    height: 200px;
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+}
+
+#horizontal-img-content {
+    display: flex;
+}
+
+#horizontal-img {
+    width: 60%;
+    margin-left: 10px;
+}
+
+#horizontal-btn-icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+;
+#horizontal-card-icons {
+    margin-right: 10px;
+}
+
+#horizontal-card-icons i {
+    font-size: 1.3rem;
+    padding: 5px 5px;
+    margin-top: 18px;
+}
+
+#horizontal-card:hover {
+    z-index: 7;
+    transform: scale(1.05)
+}
+
+
+/* text card */
+
+#text-card {
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    height: 200px;
+}
+
+#text-card-para {
+    font-size: 1.2rem;
+    padding: 5px 5px;
+}
+
+#text-card-btn {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+#add-to-cart {
+    border: none;
+    padding: 1rem 1rem;
+    background-color: #f8e831;
+    font-weight: bold;
+}
+
+#buy-now {
+    border: none;
+    padding: 1rem 1rem;
+    background-color: #00acee;
+    font-weight: bold;
+}
+
+#text-card:hover {
+    z-index: 7;
+    transform: scale(1.05)
+}
+
+
+/* textoverlay-card */
+
+#text-overlay-card {
+    position: relative;
+}
+
+#text-overlay-on-card {
+    position: absolute;
+    background-color: #8D021F;
+    color: white;
+    left: 50px;
+    top: 20px;
+    text-align: center;
+    border-radius: 12px;
+    padding: 5px;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+#card-code-snippet {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+@media only screen and (max-width:600px) {
+    #card-info {
+        width: 276px;
+        height: 250px;
+    }
+    #vertical-img {
+        width: 50%;
+        height: 180px;
+    }
+    #price-ratings {
+        margin-top: 5px;
+    }
+    #price {
+        margin-top: 5px;
+    }
+    /* badge on card */
+    #badge-on-card {
+        padding: 0;
+        top: 5px;
+    }
+    /* horizontal */
+    #horizontal-card {
+        width: 350px;
+    }
+    #text-overlay-on-card {
+        font-size: 1rem;
+        left: 70px;
+    }
+    #card-code-snippet {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #sidebar-menu {
+        width: 250px;
+    }
+    #card-container,
+    #card-heading {
+        margin-left: 250px;
+    }
+    #open-Btn,
+    .library-sidebar .close-Btn {
+        display: none;
+    }
+}
