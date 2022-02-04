@@ -145,4 +145,7 @@
     #res-image {
         width: 80%;
     }
+    .image-code-snippet {
+        display: none;
+    }
 }
