@@ -5,24 +5,24 @@
     box-sizing: border-box;
 }
 
-#component-title {
+.component-title {
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
 }
 
-#component-description {
+.component-description {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
 }
 
-#side-heading {
+.side-heading {
     font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
 }
 
-#side-heading-description {
+.side-heading-description {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
 }
@@ -85,8 +85,8 @@
     padding: 16px;
 }
 
-#input-heading,
-#input-container {
+#heading,
+#container {
     transition: margin-left .5s;
 }
 
@@ -142,7 +142,7 @@
     margin-bottom: 30px;
 }
 
-.input-code-snippet {
+.code-snippet {
     display: flex;
     justify-content: center;
     margin-top: 25px;
@@ -152,8 +152,8 @@
     #sidebar-menu {
         width: 250px;
     }
-    #input-container,
-    #input-heading {
+    #container,
+    #heading {
         margin-left: 250px;
     }
     #open-Btn,
@@ -163,7 +163,7 @@
 }
 
 @media only screen and (max-width:600px) {
-    .input-code-snippet {
+    .code-snippet {
         display: none;
     }
 }
