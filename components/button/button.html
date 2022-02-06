@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>button</title>
+    <link href="button.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Inter:wght@200;400;600;700&family=Mulish&family=Nunito+Sans:wght@300&family=Ubuntu:wght@300&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Responsive sidebar -->
+    <nav class="library-sidebar" id="sidebar-menu">
+        <a href="" style="font-size:24px;padding-left:0;font-weight:bold;">Getting Started</a>
+
+        <h2>Components</h2>
+        <ul>
+            <li>
+                <a href="/index.html">Getting Started</a>
+            </li>
+            <li>
+                <a href="/components/avatar/avatar.html">Avatar</a>
+            </li>
+            <li>
+                <a href="/components/alert/alert.html">Alert</a>
+
+            </li>
+            <li>
+                <a href="/components/badge/badge.html">Badge</a>
+            </li>
+            <li>
+                <a href="/components/button/button.html">Button</a>
+            </li>
+            <li>
+                <a href="/components/card/card.html">Card</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div id="main">
+        <span class='material-icons' id="open-Btn" onClick="openBar()">menu</span>
+    </div>
+    <!-- buttons -->
+    <header id="heading">
+        <div class="component-title">Button</div>
+        <div class="component-description">Button are used for taking decisions with a single click, like submitting the form.</div>
+    </header>
+    <main id="container">
+        <div class="contained-button">
+            <div class="side-heading">Contained button</div>
+            <div class="side-heading-description">
+                Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
+            </div>
+
+            <div class="btn-output">
+                <button class="contained-primary-button">
+          primary</button>
+                <button class="contained-secondary-button">secondary
+       </button>
+                <button class="contained-info-button">info</button>
+                <button class="contained-warning-button">warning</button>
+
+            </div>
+        </div>
+        <div class="code-snippet">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28189%2C16%2C224%2C1%29&t=vscode&wt=none&l=htmlmixed&width=608.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=177%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522contained-primary-button%2522%253E%250A%2520%2520primary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522contained-secondary-button%2522%253Esecondary%250A%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522contained-info-button%2522%253Einfo%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522contained-warning-button%2522%253Ewarning%253C%252Fbutton%253E"
+                style="width: 608px; height: 294px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+        </div>
+        <!-- outline button -->
+        <div class="outlined-button">
+            <div class="side-heading">Outline button</div>
+            <div class="side-heading-description">
+                Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren't the primary action in an app.
+            </div>
+
+            <div class="btn-output">
+                <button class="outlined-primary-button">
+          primary</button>
+                <button class="outlined-secondary-button">secondary
+       </button>
+                <button class="outlined-info-button">info</button>
+                <button class="outlined-warning-button">warning</button>
+
+            </div>
+        </div>
+        <div class="code-snippet">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28189%2C16%2C224%2C1%29&t=vscode&wt=none&l=htmlmixed&width=608.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=177%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522outlined-primary-button%2522%253E%250Aprimary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522outlined-secondary-button%2522%253Esecondary%250A%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522outlined-info-button%2522%253Einfo%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522outlined-warning-button%2522%253Ewarning%253C%252Fbutton%253E"
+                style="width: 608px; height: 266px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+        </div>
+
+
+        <!-- icon button -->
+        <div class="icon-button">
+            <div class="side-heading">Icon button</div>
+            <div class="side-heading-description">
+                An icon button is an icon that triggers some sort of action on the page.
+            </div>
+
+            <div class="btn-output">
+                <div class="share-button">
+                    <button class="icon-button">
+                   <span class='material-icons' >share</span>
+                   Share</button></div>
+                <div class="pause-button">
+                    <button class="icon-button"><span class='material-icons'>pause</span>
+                    Pause</button></div>
+                <div class="attachment-button">
+                    <button="classicon-button"><span class='material-icons'>attachment</span>Attachment</button>
+                </div>
+            </div>
+            <div class="code-snippet">
+                <embed src="https://carbon.now.sh/embed?bg=rgba%28189%2C16%2C224%2C1%29&t=vscode&wt=none&l=htmlmixed&width=608.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=177%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522icon-button%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%27material-icons%27%2520%253Eshare%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520Share%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522pause-button%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522icon-button%2522%253E%253Cspan%2520class%253D%27material-%2520%2520%2520%2520%2520%2520%2520%2520%2520icons%27%253Epause%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Pause%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522attachment-button%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%253D%2522classicon-button%2522%253E%253Cspan%2520class%253D%27material-%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520icons%27%253Eattachment%253C%252Fspan%253EAttachment%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                    style="width: 608px; height: 458px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+            </div>
+            <!-- float button -->
+            <div class="float-button">
+                <div class="side-heading">Float button</div>
+                <div class="side-heading-description">
+                    A floating action button appears in front of all screen content, typically as a circular shape with an icon in its center.
+                </div>
+                <div class="btn-output">
+                    <div class="twitter-button">
+                        <div class="twitter-icon">
+                            <i class='fa fa-twitter'></i>
+                        </div>
+                    </div>
+                    <div class="telegram-button">
+                        <div class="telegram-icon">
+                            <i class='fa fa-telegram'></i>
+                        </div>
+                    </div>
+                    <div class="facebook-button">
+                        <div class="facebook-icon">
+                            <i class='fa fa-facebook'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="code-snippet">
+                <embed src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=vscode&wt=none&l=htmlmixed&width=589&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=MonoLisa&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522twitter-button%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522twitter-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%27fa%2520fa-twitter%27%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522telegram-button%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522telegram-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%27fa%2520fa-telegram%27%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522facebook-button%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522facebook-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%27fa%2520fa-facebook%27%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 608px; height: 473px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+            </div>
+
+        </div>
+        </div>
+
+    </main>
+
+    <script>
+        function openBar() {
+            document.getElementById("sidebar-menu").style.width = "250px";
+            document.getElementById("heading").style.marginLeft = "250px";
+            document.getElementById("container").style.marginLeft = "250px"
+            document.getElementById("open-Btn").style.marginLeft = "250px";
+
+        }
+
+        function closeBar() {
+            document.getElementById("sidebar-menu").style.width = "0";
+            document.getElementById("heading").style.marginLeft = "0";
+            document.getElementById("container").style.marginLeft = "0";
+            document.getElementById("open-Btn").style.marginLeft = "0px";
+        }
+    </script>
+</body>
+
+</html>

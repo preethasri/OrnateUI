@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Badge</title>
+    <link href="badge.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+
+<body>
+    <!-- responsive sidebar -->
+    <nav class="library-sidebar" id="sidebar-menu">
+        <a href="" style="font-size:24px;padding-left:0;font-weight:bold;">Getting Started</a>
+
+        <h2>Components</h2>
+        <ul>
+            <li>
+                <a href="/index.html">Getting Started</a>
+            </li>
+            <li>
+                <a href="/components/avatar/avatar.html">Avatar</a>
+            </li>
+            <li>
+                <a href="/components/alert/alert.html">Alert</a>
+
+            </li>
+            <li>
+                <a href="/components/badge/badge.html">Badge</a>
+            </li>
+            <li>
+                <a href="/components/button/button.html">Button</a>
+            </li>
+            <li>
+                <a href="/components/card/card.html">Card</a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <div id="main">
+        <span class='material-icons' id="open-Btn" onClick="openBar()">menu</span>
+    </div>
+    <!-- badge container -->
+    <header id="heading">
+        <div class="component-title">Badge</div>
+        <div class="component-description">Badges are used to create a badge attribute with value.it is used inside icons,avatars and text </div>
+
+    </header>
+    <main id="container">
+        <!-- badges on avatar -->
+        <div class="badges-on-avatars">
+            <div class="side-heading">Badges on Avatars</div>
+            <div class="side-heading-description">It is usually used to represent the person's status as active,offline,away etc..</div>
+            <div class="badge-images">
+                <div class="avatar-badge">
+                    <img src="/images/avatar2.jpg" alt="" class="avatar1-img">
+                    <span class="status-badge-online"></span>
+                </div>
+                <div class="avatar-badge">
+                    <img src="/images/avatar2.jpg" alt="" class="avatar2-img">
+                    <span class="status-badge-offline"></span>
+                </div>
+                <div class="avatar-badge">
+                    <img src="/images/avatar2.jpg" alt="" class="avatar3-img">
+                    <span class="status-badge-away"></span>
+                </div>
+            </div>
+        </div>
+        <div class="code-snippet">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28189%2C16%2C224%2C1%29&t=vscode&wt=none&l=htmlmixed&width=608.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=177%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-badge%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Favatar2.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar1-img%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522status-badge-online%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar-badge%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Favatar2.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar2-img%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522status-badge-offline%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar-badge%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Favatar2.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar3-img%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522status-badge-away%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                style="width: 608px; height: 486px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+        </div>
+        <!-- badges on icons -->
+        <div class="badges-on-icons">
+            <div class="side-heading">Badges on Icons</div>
+            <div class="side-heading-description">it is often used as a notification in numbers related to that icon </div>
+            <div class="badge-icons">
+                <div class="icon-badge">
+                    <span class='material-icons' id="mail-icon">mail_outline</span>
+                    <span class="mail-badge">2</span>
+                </div>
+                <div class="icon-badge">
+                    <span class='material-icons' id="notification-icon">notifications</span>
+                    <span class="notification-badge">5</span>
+                </div>
+                <div class="icon-badge">
+                    <span class='material-icons' id="add-to-cart-icon">add_shopping_cart</span>
+                    <span class="add-to-cart-badge">7</span>
+                </div>
+            </div>
+        </div>
+        <div class="code-snippet">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28189%2C16%2C224%2C1%29&t=vscode&wt=none&l=htmlmixed&width=608.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=177%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-badge%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%27material-icons%27%2520id%253D%2522mail-icon%2522%253Email_outline%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522mail-badge%2522%253E2%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522icon-badge%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%27material-icons%27%2520id%253D%2522notification-icon%2522%253Enotifications%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522notification-badge%2522%253E5%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522icon-badge%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%27material-icons%27%2520id%253D%2522add-to-cart-icon%2522%253Eadd_shopping_cart%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522add-to-cart-badge%2522%253E7%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                style="width: 608px; height: 486px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+        </div>
+        <!-- badges on buttons -->
+        <div class="badges-on-buttons">
+            <div class="side-heading">Badges on Buttons</div>
+            <div class="side-heading-description">it is often used as a notification in numbers related to that button</div>
+            <div class="badge-buttons">
+                <div class="button-badge">
+                    <button class="primary-btn">AddToCart</button>
+                    <span class="primaryBtn-badge">4</span>
+                </div>
+                <div class="button-badge">
+                    <button class="secondary-btn">BuyNow</button>
+                    <span class="secondaryBtn-badge">8</span>
+
+                </div>
+                <div class="button-badge">
+                    <button class="tweet-btn">Tweet</button>
+                    <span class="tweetBtn-badge">2</span>
+                </div>
+            </div>
+        </div>
+        <div class="code-snippet">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28189%2C16%2C224%2C1%29&t=vscode&wt=none&l=htmlmixed&width=608.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=177%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cdiv%2520class%253D%2522button-badge%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522primary-btn%2522%253EAddToCart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522primaryBtn-badge%2522%253E4%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522button-badge%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522secondary-btn%2522%253EBuyNow%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522secondaryBtn-badge%2522%253E8%253C%252Fspan%253E%250A%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522button-badge%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522tweet-btn%2522%253ETweet%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522tweetBtn-badge%2522%253E2%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                style="width: 608px; height: 431px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+        </div>
+    </main>
+    <script>
+        function openBar() {
+            document.getElementById("sidebar-menu").style.width = "250px";
+            document.getElementById("heading").style.marginLeft = "250px";
+            document.getElementById("container").style.marginLeft = "250px"
+            document.getElementById("open-Btn").style.marginLeft = "250px";
+
+        }
+
+        function closeBar() {
+            document.getElementById("sidebar-menu").style.width = "0";
+            document.getElementById("heading").style.marginLeft = "0";
+            document.getElementById("container").style.marginLeft = "0";
+            document.getElementById("open-Btn").style.marginLeft = "0px";
+        }
+    </script>
+</body>
+
+</html>

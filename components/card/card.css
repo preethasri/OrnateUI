@@ -5,31 +5,31 @@
     box-sizing: border-box;
 }
 
-#component-title {
+.component-title {
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
 }
 
-#component-description {
+.component-description {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
 }
 
-
-/* sidebar */
-
-#side-heading {
+.side-heading {
     font-size: 1.4rem;
     font-weight: bold;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
-#side-heading-description {
+.side-heading-description {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
 }
+
+
+/* sidebar */
 
 .library-sidebar {
     height: 100%;
@@ -86,15 +86,15 @@
     padding: 16px;
 }
 
-#card-heading,
-#card-container {
+#heading,
+#container {
     transition: margin-left .5s;
 }
 
 
 /* cards */
 
-#cards {
+.cards {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,36 +118,36 @@
     transform: scale(1.05)
 }
 
-#img {
+.img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#vertical-img {
+.vertical-img {
     width: 70%;
     object-fit: contain;
     margin-top: 10px;
 }
 
-#price-ratings {
+.price-ratings {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
 }
 
-#rating i {
+.rating i {
     color: #FF9529;
 }
 
 
 /* badge on container */
 
-#badge-card {
+.badge-card {
     position: relative;
 }
 
-#badge-on-card {
+.badge-on-card {
     position: absolute;
     background-color: maroon;
     color: white;
@@ -161,11 +161,11 @@
 
 /* card dismiss*/
 
-#card-dismiss {
+.card-dismiss {
     position: relative;
 }
 
-#close-btn {
+.close-btn {
     position: absolute;
     top: 0;
     right: 5px;
@@ -176,41 +176,45 @@
 
 /* horizontal card */
 
-#horizontal-card {
+.horizontal-card {
     width: 400px;
-    height: 200px;
+    height: 180px;
     box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     border-radius: 3px;
 }
 
-#horizontal-img-content {
+.horizontal-img-content {
     display: flex;
 }
 
-#horizontal-img {
+.horizontal-img {
     width: 60%;
     margin-left: 10px;
 }
 
-#horizontal-btn-icon {
+.horizontal-card-btn {
+    padding: 20px 0px;
+}
+
+.horizontal-btn-icon {
     display: flex;
     justify-content: space-between;
 }
 
 ;
-#horizontal-card-icons {
+.horizontal-card-icons {
     margin-right: 10px;
 }
 
-#horizontal-card-icons i {
+.horizontal-card-icons i {
     font-size: 1.3rem;
     padding: 5px 5px;
-    margin-top: 18px;
+    margin-top: 35px;
 }
 
-#horizontal-card:hover {
+.horizontal-card:hover {
     z-index: 7;
     transform: scale(1.05)
 }
@@ -218,7 +222,7 @@
 
 /* text card */
 
-#text-card {
+.text-card {
     box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 300px;
@@ -229,32 +233,32 @@
     height: 200px;
 }
 
-#text-card-para {
+.text-card-para {
     font-size: 1.2rem;
     padding: 5px 5px;
 }
 
-#text-card-btn {
+.text-card-btn {
     display: flex;
     justify-content: flex-end;
-    gap: 20px;
+    gap: 10px;
 }
 
-#add-to-cart {
+.add-to-cart {
     border: none;
     padding: 1rem 1rem;
     background-color: #f8e831;
     font-weight: bold;
 }
 
-#buy-now {
+.buy-now {
     border: none;
     padding: 1rem 1rem;
     background-color: #00acee;
     font-weight: bold;
 }
 
-#text-card:hover {
+.text-card:hover {
     z-index: 7;
     transform: scale(1.05)
 }
@@ -262,11 +266,11 @@
 
 /* textoverlay-card */
 
-#text-overlay-card {
+.text-overlay-card {
     position: relative;
 }
 
-#text-overlay-on-card {
+.text-overlay-on-card {
     position: absolute;
     background-color: #8D021F;
     color: white;
@@ -280,41 +284,41 @@
     font-size: 1.3rem;
 }
 
-#card-code-snippet {
+.code-snippet {
     display: flex;
     justify-content: center;
     margin-top: 25px;
 }
 
 @media only screen and (max-width:600px) {
-    #card-info {
+    .card-info {
         width: 276px;
         height: 250px;
     }
-    #vertical-img {
+    .vertical-img {
         width: 50%;
         height: 180px;
     }
-    #price-ratings {
+    .price-ratings {
         margin-top: 5px;
     }
-    #price {
+    .price {
         margin-top: 5px;
     }
     /* badge on card */
-    #badge-on-card {
+    .badge-on-card {
         padding: 0;
         top: 5px;
     }
     /* horizontal */
-    #horizontal-card {
+    .horizontal-card {
         width: 350px;
     }
-    #text-overlay-on-card {
+    .text-overlay-on-card {
         font-size: 1rem;
         left: 70px;
     }
-    #card-code-snippet {
+    .card-code-snippet {
         display: none;
     }
 }
@@ -323,8 +327,8 @@
     #sidebar-menu {
         width: 250px;
     }
-    #card-container,
-    #card-heading {
+    #container,
+    #heading {
         margin-left: 250px;
     }
     #open-Btn,

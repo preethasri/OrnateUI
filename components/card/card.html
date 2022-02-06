@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>card</title>
+    <link href="card.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Inter:wght@200;400;600;700&family=Mulish&family=Nunito+Sans:wght@300&family=Ubuntu:wght@300&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Responsive sidebar -->
+    <nav class="library-sidebar" id="sidebar-menu">
+        <a href="" style="font-size:24px;padding-left:0;font-weight:bold;">Getting Started</a>
+
+        <h2>Components</h2>
+        <ul>
+            <li>
+                <a href="/index.html">Getting Started</a>
+            </li>
+            <li>
+                <a href="/components/avatar/avatar.html">Avatar</a>
+            </li>
+            <li>
+                <a href="/components/alert/alert.html">Alert</a>
+
+            </li>
+            <li>
+                <a href="/components/badge/badge.html">Badge</a>
+            </li>
+            <li>
+                <a href="/components/button/button.html">Button</a>
+            </li>
+            <li>
+                <a href="/components/card/card.html">Card</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="main">
+        <span class='material-icons' id="open-Btn" onClick="openBar()">menu</span>
+    </div>
+    <!-- cards -->
+    <header id="heading">
+        <div class="component-title">Card</div>
+        <div class="component-description">A card is any type of custom element used for easy showing of contents that comprises various types of objects like title, image, button..</div>
+    </header>
+    <main id="container">
+        <div class="side-heading">Card/Vertical card</div>
+        <div class="side-heading-description">vertical cards are used as product cards,business cards etc..</div>
+        <div class="cards">
+            <!-- vertical card -->
+            <div class="card-info">
+                <div class="card">
+                    <div class="img">
+                        <img src="/images/iphone2.jpg" alt="" class="vertical-img">
+                    </div>
+                    <div class="content">
+                        <div class="productName">
+                            <span>Apple iPhone 12(128GB)</span>
+                        </div>
+                        <div class="price-ratings">
+                            <div class="price">
+                                <span>price:$799</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="code-snippet">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=vscode&wt=none&l=htmlmixed&width=589&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=MonoLisa&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%253Cdiv%2520class%253D%2522img%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fiphone2.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522vertical-img%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522productName%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EApple%2520iPhone%252012%28128GB%29%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522price-ratings%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253Eprice%253A%2524799%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%252Fdiv%253E"
+                style="width: 589px; height: 553px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+
+        </div>
+        <!-- card with badges -->
+        <div class="side-heading">Card with Badge</div>
+        <div class="side-heading-description">badges are used to contain a bit and useful information about the card</div>
+        <div class="cards">
+
+            <div class="card-info">
+
+                <div class="card">
+                    <div class="badge-card">
+                        <div class="badge-on-card">
+                            <span>sold out</span>
+                        </div>
+                        <div class="img">
+                            <img src="/images/iphone2.jpg" alt="" class="vertical-img">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="productName">
+                            <span>Apple iPhone 12(128GB)</span>
+                        </div>
+                        <div class="price-ratings">
+                            <div class="price">
+                                <span>price:$799</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star" style="color:grey;"></i>
+                                <i class="fa fa-star" style="color:grey;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="code-snippet">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=vscode&wt=none&l=htmlmixed&width=589&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=MonoLisa&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%253Cdiv%2520class%253D%2522badge-card%2522%253E%250A%253Cdiv%2520class%253D%2522badge-on-card%2522%253E%250A%2520%2520%2520%2520%253Cspan%253Esold%2520out%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522img%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fiphone2.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522vertical-img%2522%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522content%2522%253E%250A%253Cdiv%2520class%253D%2522productName%2522%253E%250A%2520%2520%2520%2520%253Cspan%253EApple%2520iPhone%252012%28128GB%29%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522price-ratings%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253Eprice%253A%2524799%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%2520style%253D%2522color%253Agrey%253B%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%2520style%253D%2522color%253Agrey%253B%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="width: 589px; height: 633px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+        </div>
+        <!-- card with dismiss -->
+        <div class="side-heading">card with dismiss</div>
+        <div class="side-heading-description">card with dismiss are used to close the cards.</div>
+        <div class="cards">
+            <div class="card-info">
+                <div class="card-dismiss">
+                    <i class="fa fa-close" id="close-btn"></i>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="/images/iphone2.jpg" alt="" id="vertical-img">
+                    </div>
+                    <div class="content">
+                        <div class="productName">
+                            <span>Apple iPhone 12(128GB)</span>
+                        </div>
+                        <div class="price-ratings">
+                            <div class="price">
+                                <span>price:$799</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star" style="color:grey;"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="code-snippet">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=vscode&wt=none&l=htmlmixed&width=589&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=MonoLisa&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-info%2522%253E%250A%253Cdiv%2520class%253D%2522card-dismiss%2522%253E%250A%253Ci%2520class%253D%2522fa%2520fa-close%2522%2520id%253D%2522close-btn%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card%2522%253E%250A%253Cdiv%2520class%253D%2522img%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fiphone2.jpg%2522%2520alt%253D%2522%2522%2520id%253D%2522vertical-img%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522productName%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EApple%2520iPhone%252012%28128GB%29%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522price-ratings%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253Eprice%253A%2524799%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%2520style%253D%2522color%253Agrey%253B%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="width: 589px; height: 693px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+        </div>
+        <!-- horizontal card -->
+        <div class="side-heading">Horizontal card</div>
+        <div class="side-heading-description">horizontal cards are used as product cards,business cards etc..</div>
+        <div class="cards">
+            <div class="horizontal-card">
+                <div class="horizontal-img-content">
+                    <div class="horizontal-card-img">
+                        <img src="/images/iphone2.jpg" alt="" class="horizontal-img">
+                    </div>
+                    <div class="horizontal-card-content">
+                        <div class="horizontal-card-heading">
+                            Apple iPhone 12(128GB)
+                        </div>
+                        <div class="horizontal-card-para">
+                            A super-powerful chip. An advanced dual‑camera system.provided ceramic shield and 256GB .Black color
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-btn-icon">
+                    <div class="horizontal-card-btn">
+                        <button class="add-to-cart">add to cart</button>
+                        <button class="buy-now">Buy now</button>
+                    </div>
+                    <div class="horizontal-card-icons">
+                        <i class="fa fa-heart"></i>
+                        <i class="fa fa-share-alt"></i>
+                        <i class="fa fa-bookmark"></i>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="code-snippet">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=vscode&wt=none&l=htmlmixed&width=589&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=MonoLisa&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522horizontal-card%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522horizontal-img-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522horizontal-card-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fiphone2.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522horizontal-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522horizontal-card-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522horizontal-card-heading%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Apple%2520iPhone%252012%28128GB%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522horizontal-card-para%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520super-powerful%2520chip.%2520An%2520advanced%2520dual%25E2%2580%2591camera%2520system.provided%2520ceramic%2520shield.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522horizontal-btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522horizontal-card-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522add-to-cart%2522%253Eadd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522buy-now%2522%253EBuy%2520now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522horizontal-card-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-share-alt%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-bookmark%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%250A%253C%252Fdiv%253E"
+                style="width: 589px; height: 693px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+        </div>
+
+        <!-- Text only card -->
+        <div class="side-heading">Text only Card</div>
+        <div class="side-heading-description">Text card are simple ones made using only text</div>
+        <div class="cards">
+            <div class="text-card">
+                <div class="card">
+                    <div class="text-card-para">
+                        A card is any type of custom element used for easy showing of contents that comprises various types of objects like title, image, button..
+                    </div>
+                    <div class="text-card-btn">
+                        <button class="add-to-cart">add to cart</button>
+                        <button class="buy-now">Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="code-snippet">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=vscode&wt=none&l=htmlmixed&width=589&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=MonoLisa&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522text-card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-card-para%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520A%2520card%2520is%2520any%2520type%2520of%2520custom%2520element%2520used%2520for%2520eas%2520y%2520showing%2520of%2520contents%2520that%2520comprises%2520various%2520types%2520of%2520objects%2520like%2520title%252C%2520image%252C%2520button..%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-card-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522add-to-cart%2522%253Eadd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522buy-now%2522%253EBuy%2520now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="width: 589px; height: 354px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+        </div>
+        <!-- Text-overlay -->
+        <div class="side-heading">Card with Textoverlay</div>
+        <div class="side-heading-description">card-img-overlay is used to set the image as background image of the card and add text over the image.</div>
+        <div class="cards">
+
+            <div class="card-info">
+
+                <div class="card">
+                    <div class="text-overlay-card">
+                        <div class="text-overlay-on-card">
+                            <span>Free Delivery</span>
+                        </div>
+                        <div class="img">
+                            <img src="/images/iphone2.jpg" alt="" class="vertical-img">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="productName">
+                            <span>Apple iPhone 12(128GB)</span>
+                        </div>
+                        <div class="price-ratings">
+                            <div class="price">
+                                <span>price:$799</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star" style="color:grey;"></i>
+                                <i class="fa fa-star" style="color:grey;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="code-snippet">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28248%2C231%2C28%2C1%29&t=vscode&wt=none&l=htmlmixed&width=589&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=MonoLisa&fs=15px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522text-overlay-card%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-overlay-on-card%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EFree%2520Delivery%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522img%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fiphone2.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522vertical-img%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522content%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522productName%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EApple%2520iPhone%252012%28128GB%29%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522price-ratings%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522price%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253Eprice%253A%2524799%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%2520style%253D%2522color%253Agrey%253B%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%2520style%253D%2522color%253Agrey%253B%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="width: 589px; height: 673px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+        </div>
+
+    </main>
+    <script>
+        function openBar() {
+            document.getElementById("sidebar-menu").style.width = "250px";
+            document.getElementById("heading").style.marginLeft = "250px";
+            document.getElementById("container").style.marginLeft = "250px"
+            document.getElementById("open-Btn").style.marginLeft = "250px";
+            document.getElementById("horizontal-card").style.display = "none"
+            document.getElementById("text-card").style.display = "none"
+
+        }
+
+        function closeBar() {
+            document.getElementById("sidebar-menu").style.width = "0";
+            document.getElementById("heading").style.marginLeft = "0";
+            document.getElementById("container").style.marginLeft = "0";
+            document.getElementById("open-Btn").style.marginLeft = "0px";
+            document.getElementById("horizontal-card").style.display = "block"
+            document.getElementById("text-card").style.display = "block"
+        }
+    </script>
+</body>
+
+</html>

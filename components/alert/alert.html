@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Alert</title>
+    <link href="alert.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+
+<body>
+    <!-- Responsive sidebar -->
+    <nav class="library-sidebar" id="sidebar-menu">
+        <a href="" style="font-size:24px;padding-left:0;font-weight:bold;">Getting Started</a>
+
+        <h2>Components</h2>
+        <a href="#" class="close-Btn" onclick="closeBar()">×</a>
+        <ul>
+            <li>
+                <a href="/index.html">Getting Started</a>
+            </li>
+            <li>
+                <a href="/components/avatar/avatar.html">Avatar</a>
+            </li>
+            <li>
+                <a href="/components/alert/alert.html">Alert</a>
+
+            </li>
+            <li>
+                <a href="/components/badge/badge.html">Badge</a>
+            </li>
+            <li>
+                <a href="/components/button/button.html">Button</a>
+            </li>
+            <li>
+                <a href="/components/card/card.html">Card</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div id="main">
+        <span class='material-icons' id="open-Btn" onClick="openBar()">menu</span>
+    </div>
+
+    <!-- Alert -->
+    <header id="heading">
+        <div class="component-title">Alert</div>
+        <div class="component-description">Alerts are usually poped at the top to show user some special notifications .</div>
+    </header>
+    <main id="container">
+        <div class="simple-alerts">
+            <div class="side-heading">Simple Alerts
+            </div>
+            <div class="side-heading-description">The simple alert box takes the focus away from the current window, and forces the user to read the message
+            </div>
+
+            <div class="alert-boxes">
+                <p class="success-alert">This is a Success Alert</p>
+                <p class="danger-alert">This is a danger Alert</p>
+                <p class="warning-alert">This is a warning Alert</p>
+                <p class="info-alert">This is a info Alert</p>
+            </div>
+        </div>
+        <!-- crossbar alerts -->
+        <div class="crossbar-alerts">
+            <div class="side-heading">Alert with icons and cross bar</div>
+            <div class="side-heading-description">
+                the cross icon used to close the alert message
+            </div>
+            <div class="alert-boxes">
+                <div class="crossbar-success-alert">
+                    <span class='material-icons'>check_circle_outline</span>
+                    <p>This is a Success Alert</p>
+                    <span class='material-icons'>close</span>
+                </div>
+                <div class="crossbar-danger-alert">
+                    <span class='material-icons'>dangerous</span>
+                    <p>This is a danger Alert</p>
+                    <span class='material-icons'>close</span>
+                </div>
+                <div class="crossbar-warning-alert">
+                    <span class='material-icons'>warning_amber</span>
+                    <p>This is a warning Alert</p>
+                    <span class='material-icons'>close</span>
+                </div>
+                <div class="crossbar-info-alert">
+                    <span class='material-icons'>info</span>
+                    <p>This is a info Alert </p>
+                    <span class='material-icons'>close</span>
+                </div>
+            </div>
+        </div>
+        <div class="code-snippet">
+
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28189%2C16%2C224%2C1%29&t=vscode&wt=none&l=htmlmixed&width=608.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=177%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522alert-boxes%2522%253E%250A%253Cdiv%2520class%253D%2522crossbar-success-alert%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%27material-icons%27%253Echeck_circle_outline%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520Success%2520Alert%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%27material-icons%27%253Eclose%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522crossbar-danger-alert%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%27material-icons%27%253Edangerous%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520danger%2520Alert%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%27material-icons%27%253Eclose%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522crossbar-warning-alert%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%27material-icons%27%253Ewarning_amber%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520warning%2520Alert%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%27material-icons%27%253Eclose%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522crossbar-info-alert%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%27material-icons%27%253Einfo%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520info%2520Alert%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%27material-icons%27%253Eclose%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                style="width: 608px; height: 688px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+
+        </div>
+
+
+    </main>
+
+    <script>
+        function openBar() {
+            document.getElementById("sidebar-menu").style.width = "250px";
+            document.getElementById("heading").style.marginLeft = "250px";
+            document.getElementById("container").style.marginLeft = "250px"
+            document.getElementById("open-Btn").style.marginLeft = "250px";
+
+        }
+
+        function closeBar() {
+            document.getElementById("sidebar-menu").style.width = "0";
+            document.getElementById("heading").style.marginLeft = "0";
+            document.getElementById("container").style.marginLeft = "0";
+            document.getElementById("open-Btn").style.marginLeft = "0px";
+        }
+    </script>
+</body>
+
+</html>

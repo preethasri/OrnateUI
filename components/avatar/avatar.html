@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Avatar</title>
+    <link href="avatar.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+
+<body>
+
+    <!-- Responsive sidebar -->
+    <nav class="library-sidebar" id="sidebar-menu">
+        <a href="" style="font-size:24px;padding-left:0;font-weight:bold;">Getting Started</a>
+
+        <h2>Components</h2>
+        <a href="#" class="close-Btn" onclick="closeBar()">×</a>
+        <ul>
+            <li>
+                <a href="/index.html">Getting Started</a>
+            </li>
+            <li>
+                <a href="/components/avatar/avatar.html">Avatar</a>
+            </li>
+            <li>
+                <a href="/components/alert/alert.html">Alert</a>
+
+            </li>
+            <li>
+                <a href="/components/badge/badge.html">Badge</a>
+            </li>
+            <li>
+                <a href="/components/button/button.html">Button</a>
+            </li>
+            <li>
+                <a href="/components/card/card.html">Card</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div id="main">
+        <span class='material-icons' id="open-Btn" onClick="openBar()">menu</span>
+    </div>
+
+    <!-- Avatar Component -->
+    <header id="heading">
+        <div class="component-title">Avatar</div>
+        <div class="component-description">Avatar is an profile image often used to provide additional information about the user</div>
+    </header>
+
+    <main id="container">
+        <!-- normal avatar -->
+        <div class="normal-avatar">
+            <div class="side-heading">Normal Avatar</div>
+            <div class="side-heading-description">Normal avatar has rounded borders,fixed width and height it can be accessed using id:normal-img1</div>
+            <div class="avatar-images">
+                <img src="/images/avatar1.jpg" alt="" class="normal-img1">
+                <img src="/images/avatar2.jpg" alt="" class="normal-img2">
+                <img src="/images/avatar3.jpg" alt="" class="normal-img3">
+            </div>
+        </div>
+        <div class="code-snippet">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28189%2C16%2C224%2C1%29&t=vscode&wt=none&l=htmlmixed&width=608.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=177%25&si=false&es=2x&wm=false&code=%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Favatar1.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522normal-img1%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Favatar2.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522normal-img2%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Favatar3.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522normal-img3%2522%253E"
+                style="width: 608px; height: 239px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+
+        </div>
+        <!-- square Avatar -->
+
+
+        <div class="square-avatar">
+            <div class="side-heading">Square Avatar:</div>
+            <div class="side-heading-description">Avatar with square border is known as square avatar.it can be accessed using id:square-img1</div>
+
+            <div class="avatar-images">
+                <img src="/images/avatar1.jpg" alt="" class="square-img1">
+                <img src="/images/avatar2.jpg" alt="" class="square-img2">
+                <img src="/images/avatar3.jpg" alt="" class="square-img3">
+            </div>
+        </div>
+        <div class="code-snippet">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28189%2C16%2C224%2C1%29&t=vscode&wt=none&l=htmlmixed&width=608.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=177%25&si=false&es=2x&wm=false&code=%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Favatar1.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522square-img1%2522%253E%250A%253Cimg%2520src%253D%2522%252Fimages%252Favatar2.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522square-img2%2522%253E%250A%253Cimg%2520src%253D%2522%252Fimages%252Favatar3.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522square-img3%2522%253E"
+                style="width: 608px; height: 184px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+        </div>
+        <!-- Avatar with different sizes -->
+        <div class="different-size-avatar">
+            <div class="side-heading">Avatar With Different Sizes:</div>
+            <div class="side-heading-description">Avatar with different sizes.just setting the width and height differently.it can be accessed using id:avatar-small,avatar-large</div>
+
+            <div class="avatar-images">
+                <img src="/images/avatar2.jpg" alt="" class="avatar-small">
+                <img src="/images/avatar2.jpg" alt="" class="avatar-medium">
+                <img src="/images/avatar2.jpg" alt="" class="avatar-large">
+            </div>
+        </div>
+        <div class="code-snippet">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28189%2C16%2C224%2C1%29&t=vscode&wt=none&l=htmlmixed&width=608.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=177%25&si=false&es=2x&wm=false&code=%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Favatar2.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar-small%2522%253E%250A%253Cimg%2520src%253D%2522%252Fimages%252Favatar2.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar-medium%2522%253E%250A%253Cimg%2520src%253D%2522%252Fimages%252Favatar2.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar-large%2522%253E"
+                style="width: 608px; height: 211px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+        </div>
+        <!-- Text Avatar -->
+        <div class="text-avatar">
+            <div class="side-heading">Text Avatar</div>
+            <div class="side-heading-description">Avatar with text are offen used to indicate the person's name.it can be accessed using id:text-img1,text-img2</div>
+            <div class="avatar-images">
+                <div class="text-background1">
+                    <p class="text-img1">PS</p>
+                </div>
+                <div class="text-background2">
+                    <p class="text-img2">PS</p>
+                </div>
+                <div class="text-background3">
+                    <p class="text-img3">PS</p>
+                </div>
+            </div>
+        </div>
+        <div class="code-snippet">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28189%2C16%2C224%2C1%29&t=vscode&wt=none&l=htmlmixed&width=608.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=177%25&si=false&es=2x&wm=false&code=%2520%2520%2520%253Cdiv%2520class%253D%2522text-background1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-img1%2522%253EPS%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-background2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-img2%2522%253EPS%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-background3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-img3%2522%253EPS%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="width: 608px; height: 321px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+        </div>
+
+    </main>
+
+
+
+    <script>
+        function openBar() {
+            document.getElementById("sidebar-menu").style.width = "250px";
+            document.getElementById("heading").style.marginLeft = "250px";
+            document.getElementById("container").style.marginLeft = "250px"
+            document.getElementById("open-Btn").style.marginLeft = "250px";
+
+        }
+
+        function closeBar() {
+            document.getElementById("sidebar-menu").style.width = "0";
+            document.getElementById("heading").style.marginLeft = "0";
+            document.getElementById("container").style.marginLeft = "0";
+            document.getElementById("open-Btn").style.marginLeft = "0px";
+        }
+    </script>
+
+</body>
+
+</html>

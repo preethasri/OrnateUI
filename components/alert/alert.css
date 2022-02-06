@@ -5,24 +5,24 @@
     box-sizing: border-box;
 }
 
-#component-title {
+.component-title {
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
 }
 
-#component-description {
+.component-description {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
 }
 
-#side-heading {
+.side-heading {
     font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
 }
 
-#side-heading-description {
+.side-heading-description {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
 }
@@ -85,15 +85,15 @@
     padding: 16px;
 }
 
-#alert-heading,
-#alert-container {
+#heading,
+#container {
     transition: margin-left .5s;
 }
 
 
 /* alert */
 
-#alert-boxes {
+.alert-boxes {
     text-align: center;
     padding: 5px 5px;
     margin-top: 10px;
@@ -104,7 +104,7 @@
 
 /* simple Alerts */
 
-#success-alert {
+.success-alert {
     background-color: #d4edda;
     padding: 10px;
     margin-bottom: 10px;
@@ -114,7 +114,7 @@
     box-shadow: 0 4px 4px black;
 }
 
-#danger-alert {
+.danger-alert {
     background-color: #f8d7da;
     padding: 10px;
     margin-bottom: 10px;
@@ -124,7 +124,7 @@
     box-shadow: 0 4px 4px black;
 }
 
-#warning-alert {
+.warning-alert {
     background-color: #fff3cd;
     padding: 10px;
     margin-bottom: 10px;
@@ -134,7 +134,7 @@
     box-shadow: 0 4px 4px black;
 }
 
-#info-alert {
+.info-alert {
     background-color: #d1ecf1;
     padding: 10px;
     margin-bottom: 10px;
@@ -147,7 +147,7 @@
 
 /* alert with crossbar */
 
-#crossbar-success-alert {
+.crossbar-success-alert {
     display: flex;
     justify-content: space-between;
     background-color: #d4edda;
@@ -159,7 +159,7 @@
     box-shadow: 0 4px 4px black;
 }
 
-#crossbar-danger-alert {
+.crossbar-danger-alert {
     display: flex;
     justify-content: space-between;
     background-color: #f8d7da;
@@ -171,7 +171,7 @@
     box-shadow: 0 4px 4px black;
 }
 
-#crossbar-warning-alert {
+.crossbar-warning-alert {
     display: flex;
     justify-content: space-between;
     background-color: #fff3cd;
@@ -183,7 +183,7 @@
     box-shadow: 0 4px 4px black;
 }
 
-#crossbar-info-alert {
+.crossbar-info-alert {
     display: flex;
     justify-content: space-between;
     background-color: #d1ecf1;
@@ -198,7 +198,7 @@
 
 /* alert-code-snippet */
 
-#alert-code-snippet {
+.alert-code-snippet {
     display: flex;
     justify-content: center;
     margin-top: 25px;
@@ -208,11 +208,11 @@
 /* media queries */
 
 @media only screen and (max-width:600px) {
-    #alert-boxes {
+    .alert-boxes {
         width: 80%;
         padding: 0;
     }
-    #alert-code-snippet {
+    .alert-code-snippet {
         display: none;
     }
 }
@@ -221,8 +221,8 @@
     #sidebar-menu {
         width: 250px;
     }
-    #alert-container,
-    #alert-heading {
+    #container,
+    #heading {
         margin-left: 250px;
     }
     #open-Btn,
