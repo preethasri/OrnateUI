@@ -1,0 +1,178 @@
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.component-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.component-description {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.side-heading {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.side-heading-description {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.text-utilities {
+    text-align: center;
+    align-items: center;
+    margin: 20px 0px;
+    width: 100%;
+    border: 1px solid coral;
+}
+
+.heading-text-utility h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 10px 10px;
+}
+
+
+/* small-text */
+
+.para-large {
+    font-size: 1.3rem;
+    padding: 10px 10px;
+}
+
+.para-medium {
+    font-size: 1.1rem;
+    padding: 10px 10px;
+}
+
+.para-regular {
+    font-size: 1rem;
+    padding: 10px 10px;
+}
+
+.para-small {
+    font-size: 0.9rem;
+    padding: 10px 10px;
+}
+
+.para-extra-small {
+    font-size: 0.8rem;
+    padding: 10px 10px;
+}
+
+
+/* gray text  */
+
+.gray-heading,
+.gray-paragraph {
+    color: gray;
+    padding: 10px 10px;
+}
+
+.text-utilities .gray-text {
+    background-color: white;
+    padding: 10px 10px;
+}
+
+
+/* text align */
+
+.para-left-text {
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+.para-center-text {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.para-right-text {
+    text-align: right;
+    font-size: 1.3rem;
+}
+
+
+/* font weight text */
+
+.fw-9 {
+    font-weight: 900;
+    padding: 10px 10px;
+}
+
+.fw-8 {
+    font-weight: 800;
+    padding: 10px 10px;
+}
+
+.fw-6 {
+    font-weight: 600;
+    padding: 10px 10px;
+}
+
+.fw-4 {
+    font-weight: 400;
+    padding: 10px 10px;
+}
+
+.fw-1 {
+    font-weight: 100;
+    padding: 10px 10px;
+}
+
+
+/* text with colors */
+
+.primary-color {
+    color: #ff7416;
+    font-size: 1.3rem;
+    padding: 10px 10px;
+}
+
+.secondary-color {
+    color: blue;
+    font-size: 1.3rem;
+    padding: 10px 10px;
+}
+
+.warning-color {
+    color: red;
+    font-size: 1.3rem;
+    padding: 10px 10px;
+}
+
+.success-color {
+    color: green;
+    font-size: 1.3rem;
+    padding: 10px 10px;
+}
+
+.info-color {
+    color: royalblue;
+    font-size: 1.3rem;
+    padding: 10px 10px;
+}
+
+.code-snippet {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px;
+}
+
+@media only screen and (max-width:600px) {
+    .code-snippet {
+        display: none;
+    }
+}
