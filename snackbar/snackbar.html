@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>toast/snackbar</title>
+    <link href="snackbar.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Inter:wght@200;400;600;700&family=Mulish&family=Nunito+Sans:wght@300&family=Ubuntu:wght@300&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="heading">
+        <div class="component-title">Toast</div>
+        <div class="component-description">
+            The toast component is like an alert box that is only shown for a couple of seconds when something happens i.e. when the user clicks on a button, submits a form,etc.
+        </div>
+    </header>
+    <main class="container">
+        <div class="side-heading">Simple Toast</div>
+        <div class="toast">
+            <div class="toast-demo">your photo is archieved
+                <div class="retry-close">
+                    <span class="toast-feature">Retry</span>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="code-snippet">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28189%2C16%2C224%2C1%29&t=vscode&wt=none&l=htmlmixed&width=608.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=177%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast-demo%2522%253Eyour%2520photo%2520is%2520archieved%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522retry-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522toast-feature%2522%253ERetry%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-times%2522%2520%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="width: 608px; height: 222px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+        </div>
+        <!-- live demo -->
+        <div class="side-heading">Live demo</div>
+        <div class="side-heading-description">This is the demo for toast .when user click the button the toast will appear</div>
+        <div class="toast">
+            <div class="live-demo">
+                <button class="live-demo-button" onclick="handleClick()">Click Me</button>
+            </div>
+        </div>
+        <div id="toast-live">can't send a photo .Retry in 5 secs<span class="retry">Retry </span>
+            <i class="fa fa-times"></i>
+        </div>
+        <div class="code-snippet-heading">
+            <span>Html</span>
+        </div>
+
+        <div class="code-snippet">
+
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28189%2C16%2C224%2C1%29&t=vscode&wt=none&l=htmlmixed&width=608.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=177%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522live-demo%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522live-demo-button%2522%2520onclick%253D%2522handleClick%28%29%2522%253EClick%2520Me%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520id%253D%2522toast-live%2522%253Ecan%27t%2520send%2520a%2520photo%2520.Retry%2520in%25205%2520secs%253Cspan%2520class%253D%2522retry%2522%253ERetry%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="width: 608px; height: 277px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+        </div>
+        <div class="code-snippet-heading">
+            <span>Javascript</span>
+        </div>
+        <div class="code-snippet">
+            <embed src="https://carbon.now.sh/embed?bg=rgba%28189%2C16%2C224%2C1%29&t=vscode&wt=none&l=htmlmixed&width=608.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=177%25&si=false&es=2x&wm=false&code=%2520function%2520handleClick%28%29%257B%250A%2520%2520var%2520showToast%253Ddocument.getElementById%28%2522toast-live%2522%29%250A%2520%2520showToast.className%253D%27show%27%253B%250A%2520setTimeout%28function%28%29%257B%2520showToast.className%2520%253D%2520showToast.className.replace%28%2522show%2522%252C%2520%2522%2522%29%253B%2520%257D%252C%25205000%29%253B%250A%257D%2520%2520%2520"
+                style="width: 608px; height: 222px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+        </div>
+        </div>
+
+    </main>
+
+    <script src="snackbar.js">
+    </script>
+</body>
+
+</html>
