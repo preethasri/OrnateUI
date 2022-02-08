@@ -1,0 +1,157 @@
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.component-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.component-description {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.side-heading {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.side-heading-description {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.toast {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.toast-demo {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    background-color: #f1f1f1;
+    padding: 15px 15px;
+    font-size: 1.2rem;
+}
+
+.toast-feature {
+    color: blueviolet;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+fa fa-times {
+    padding-left: 5px;
+    padding-right: 5px
+}
+
+.retry-close {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+#toast-live {
+    visibility: hidden;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    padding: 16px;
+    position: fixed;
+    margin-left: -100px;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+
+.live-demo-button {
+    background-color: #f1f1f1;
+    padding: 15px 15px 15px 15px;
+    border: none;
+    margin-bottom: 100px;
+}
+
+.live-demo-button:hover {
+    background-color: lightblue;
+}
+
+#toast-live.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s fadeout 0.5s 2.5s;
+    animation: fadein 0.5s fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1
+    }
+    to {
+        bottom: 0;
+        opacity: 0
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30;
+        opacity: 1
+    }
+    to {
+        bottom: 0;
+        opacity: 0
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .toast-demo,
+    .toast-live {
+        font-size: 1rem;
+    }
+}
+
+.code-snippet {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.code-snippet-heading {
+    text-align: center;
+}
+
+@media only screen and (max-width:600px) {
+    .code-snippet,
+    .code-snippet-heading {
+        display: none;
+    }
+}
