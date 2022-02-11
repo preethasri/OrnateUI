@@ -68,10 +68,10 @@
         <span class='material-icons' id="open-Btn" onClick="openBar()">menu</span>
     </div>
     <!-- modal -->
-    <header class="heading">
+    <header id="heading">
         <div class="component-title">Modal</div>
         <div class="component-description">A modal is a dialog box/popup window that is displayed on top of the current page</div>
-        <main class="container">
+        <main id="container">
             <div class="btn">
                 <button class="live-demo-button">Live Demo</button>
             </div>
@@ -106,21 +106,7 @@
         </main>
 
     </header>
-    <script>
-        function openBar() {
-            document.getElementById("sidebar-menu").style.width = "250px";
-            document.getElementById("heading").style.marginLeft = "250px";
-            document.getElementById("container").style.marginLeft = "250px"
-            document.getElementById("open-Btn").style.marginLeft = "250px";
-
-        }
-
-        function closeBar() {
-            document.getElementById("sidebar-menu").style.width = "0";
-            document.getElementById("heading").style.marginLeft = "0";
-            document.getElementById("container").style.marginLeft = "0";
-            document.getElementById("open-Btn").style.marginLeft = "0px";
-        }
+    <script src="modal.js">
     </script>
 </body>
 

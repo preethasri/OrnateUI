@@ -66,13 +66,13 @@
     <div id="main">
         <span class='material-icons' id="open-Btn" onClick="openBar()">menu</span>
     </div>
-    <header class="heading">
+    <header id="heading">
         <div class="component-title">Toast</div>
         <div class="component-description">
             The toast component is like an alert box that is only shown for a couple of seconds when something happens i.e. when the user clicks on a button, submits a form,etc.
         </div>
     </header>
-    <main class="container">
+    <main id="container">
         <div class="side-heading">Simple Toast</div>
         <div class="toast">
             <div class="toast-demo">your photo is archieved
@@ -117,21 +117,7 @@
 
     </main>
 
-    <script>
-        function openBar() {
-            document.getElementById("sidebar-menu").style.width = "250px";
-            document.getElementById("heading").style.marginLeft = "250px";
-            document.getElementById("container").style.marginLeft = "250px"
-            document.getElementById("open-Btn").style.marginLeft = "250px";
-
-        }
-
-        function closeBar() {
-            document.getElementById("sidebar-menu").style.width = "0";
-            document.getElementById("heading").style.marginLeft = "0";
-            document.getElementById("container").style.marginLeft = "0";
-            document.getElementById("open-Btn").style.marginLeft = "0px";
-        }
+    <script src="snackbar.js">
     </script>
 </body>
 
