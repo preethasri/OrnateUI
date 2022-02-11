@@ -6,17 +6,72 @@
     <meta name="viewport" content="width=device-width">
     <title>Text utilities</title>
     <link href="textUtilities.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/component.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Inter:wght@200;400;600;700&family=Mulish&family=Nunito+Sans:wght@300&family=Ubuntu:wght@300&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="heading">
+    <!-- Responsive sidebar -->
+    <nav class="library-sidebar" id="sidebar-menu">
+        <a href="/home/index.html" id="home-page">Home|Ornate</a>
+        <a href="#" class="close-Btn" onclick="closeBar()">×</a>
+        <ul>
+
+            <li>
+                <a href="/components/avatar/avatar.html">Avatar</a>
+            </li>
+            <li>
+                <a href="/components/alert/alert.html">Alert</a>
+
+            </li>
+            <li>
+                <a href="/components/badge/badge.html">Badge</a>
+            </li>
+            <li>
+                <a href="/components/button/button.html">Button</a>
+            </li>
+            <li>
+                <a href="/components/card/card.html">Card</a>
+            </li>
+            <li>
+                <a href="/components/image component/img.html">Image</a>
+            </li>
+            <li>
+                <a href="/components/input/input.html">Input</a>
+            </li>
+            <li>
+                <a href="/components/modal/modal.html">Modal</a>
+            </li>
+            <li>
+                <a href="/components/list/list.html">List</a>
+            </li>
+            <li>
+                <a href="/components/textUtilities/textUtilities.html">Text Utilities</a>
+            </li>
+            <li>
+                <a href="/components/snackbar/snackbar.html">snackbar</a>
+            </li>
+            <li>
+                <a href="/components/ratings/rating.html">Ratings</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div id="main">
+        <span class='material-icons' id="open-Btn" onClick="openBar()">menu</span>
+    </div>
+    <!-- utilities -->
+    <header id="heading">
         <div class="component-title">
             Text utilities
         </div>
         <div class="component-description">Text utilities are used for text alignment, styles and overflow things.</div>
     </header>
-    <main class="container">
+    <main id="container">
         <!-- heading text -->
         <div class="side-heading">Heading Text</div>
         <div class="side-heading-description">Headings are used to style the main title ,sub title ofthe page </div>
@@ -116,6 +171,20 @@
 
     </main>
     <script>
+        function openBar() {
+            document.getElementById("sidebar-menu").style.width = "250px";
+            document.getElementById("heading").style.marginLeft = "250px";
+            document.getElementById("container").style.marginLeft = "250px"
+            document.getElementById("open-Btn").style.marginLeft = "250px";
+
+        }
+
+        function closeBar() {
+            document.getElementById("sidebar-menu").style.width = "0";
+            document.getElementById("heading").style.marginLeft = "0";
+            document.getElementById("container").style.marginLeft = "0";
+            document.getElementById("open-Btn").style.marginLeft = "0px";
+        }
     </script>
 </body>
 

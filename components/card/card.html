@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width">
     <title>card</title>
     <link href="card.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/css/component.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Inter:wght@200;400;600;700&family=Mulish&family=Nunito+Sans:wght@300&family=Ubuntu:wght@300&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
@@ -14,9 +16,9 @@
 <body>
     <!-- Responsive sidebar -->
     <nav class="library-sidebar" id="sidebar-menu">
-        <a href="/home/index.html">Getting Started</a>
+        <a href="/home/index.html" id="home-page">Home|Ornate</a>
+        <a href="#" class="close-Btn" onclick="closeBar()">×</a>
 
-        <h2>Components</h2>
         <ul>
 
             <li>
@@ -41,6 +43,20 @@
             <li>
                 <a href="/components/input/input.html">Input</a>
             </li>
+            <li>
+                <a href="/components/modal/modal.html">Modal</a>
+            </li>
+            <li>
+                <a href="/components/list/list.html">List</a>
+            </li>
+            <li>
+                <a href="/components/textUtilities/textUtilities.html">Text Utilities</a>
+            </li>
+            <li>
+                <a href="/components/snackbar/snackbar.html">snackbar</a>
+            </li>
+            <li>
+                <a href="/components/ratings/rating.html">Ratings</a>
         </ul>
     </nav>
 

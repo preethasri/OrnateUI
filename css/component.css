@@ -1,3 +1,4 @@
+@import url("/components/avatar/avatar.html");
 * {
     margin: 0;
     padding: 0;
@@ -31,4 +32,9 @@
     justify-content: center;
     margin-top: 25px;
     margin-bottom: 25px;
+}
+
+.code-snippet-heading {
+    text-align: center;
+    padding-top: 15px;
 }

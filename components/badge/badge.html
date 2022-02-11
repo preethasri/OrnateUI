@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width">
     <title>Badge</title>
     <link href="badge.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/component.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 </head>
@@ -13,9 +15,9 @@
 <body>
     <!-- responsive sidebar -->
     <nav class="library-sidebar" id="sidebar-menu">
-        <a href="/home/index.html">Getting Started</a>
+        <a href="/home/index.html" id="home-page">Home|Ornate</a>
+        <a href="#" class="close-Btn" onclick="closeBar()">×</a>
 
-        <h2>Components</h2>
         <ul>
 
             <li>
@@ -40,6 +42,20 @@
             <li>
                 <a href="/components/input/input.html">Input</a>
             </li>
+            <li>
+                <a href="/components/modal/modal.html">Modal</a>
+            </li>
+            <li>
+                <a href="/components/list/list.html">List</a>
+            </li>
+            <li>
+                <a href="/components/textUtilities/textUtilities.html">Text Utilities</a>
+            </li>
+            <li>
+                <a href="/components/snackbar/snackbar.html">snackbar</a>
+            </li>
+            <li>
+                <a href="/components/ratings/rating.html">Ratings</a>
         </ul>
 
     </nav>
@@ -61,15 +77,15 @@
             <div class="side-heading-description">It is usually used to represent the person's status as active,offline,away etc..</div>
             <div class="badge-images">
                 <div class="avatar-badge">
-                    <img src="/images/avatar2.jpg" alt="" class="avatar1-img">
+                    <img src="/Assests/avatar2.jpg" alt="" class="avatar1-img">
                     <span class="status-badge-online"></span>
                 </div>
                 <div class="avatar-badge">
-                    <img src="/images/avatar2.jpg" alt="" class="avatar2-img">
+                    <img src="/Assests/avatar2.jpg" alt="" class="avatar2-img">
                     <span class="status-badge-offline"></span>
                 </div>
                 <div class="avatar-badge">
-                    <img src="/images/avatar2.jpg" alt="" class="avatar3-img">
+                    <img src="/Assests/avatar2.jpg" alt="" class="avatar3-img">
                     <span class="status-badge-away"></span>
                 </div>
             </div>
