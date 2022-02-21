@@ -49,4 +49,7 @@
     .component-description {
         font-size: 1rem;
     }
+    .side-heading {
+        margin-top: 1.5rem;
+    }
 }

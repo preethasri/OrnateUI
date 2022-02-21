@@ -7,6 +7,8 @@
     margin-bottom: 1.5rem;
     flex-wrap: wrap;
     gap: 15px;
+    background-color: #f1f1f1;
+    padding: 1.5rem;
 }
 
 
@@ -239,7 +241,7 @@
 
 @media only screen and (max-width:600px) {
     .btn-output {
-        margin-left: 50px;
+        width: 100%;
     }
     code-snippet {
         display: none;
