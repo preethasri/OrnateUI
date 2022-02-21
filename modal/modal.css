@@ -41,7 +41,7 @@
     height: 100%;
     overflow: auto;
     padding-top: 80px;
-    margin-left: 30%;
+    text-align: center;
 }
 
 
@@ -130,6 +130,7 @@
         width: 100%;
         margin-left: 0;
         top: -4rem;
+        text-align: center;
     }
     .code-snippet {
         display: none;
