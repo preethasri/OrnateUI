@@ -40,12 +40,12 @@ body {
 
 .description p {
     font-size: 1.2rem;
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 .installation-para {
     font-size: 18px;
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 .home-code-snippet {
