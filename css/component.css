@@ -43,4 +43,10 @@
     .code-snippet {
         display: none;
     }
+    .side-heading-description {
+        font-size: 1rem;
+    }
+    .component-description {
+        font-size: 1rem;
+    }
 }
