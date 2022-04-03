@@ -14,7 +14,10 @@
     justify-content: center;
     margin-top: 25px;
 }
-
+.active-link{
+    color:blueviolet;
+    font-weight: 900;
+}
 
 /* normal avatar */
 

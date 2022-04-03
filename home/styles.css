@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
 @import url("/components/avatar/avatar.css");
+*{
+    --primary-color:#4D77FF;
+}
 body {
     height: 100vh;
     margin: 0;
@@ -10,69 +13,151 @@ body {
 
 /* header nav */
 
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-    border-bottom: 1px solid black;
+.navbar-container{
+    height: 60px;
+    background-color: #f1f1f1;
+}
+.navbar-wrapper{
+    padding:0.8rem 1.3rem;
     display: flex;
+    justify-content: space-between;
+    
+}
+.navbar-left{
+    flex:1;
+    display:flex;
+    align-items: center;
     justify-content: flex-start;
+    margin:0 -15px;
+    
+}
+ .navbar-left .nav-item {
+   margin-left: 20px;
+}
+.brand-name{
+    font-size: 2rem;
+    font-weight: bold;
+    color:black;
+    
+    
+}
+.home-link{
+    text-decoration: none;
+    color:black;
+}
+.documentation-link{
+    text-decoration: none;
+    color:black;
 }
 
-#social-media-links {
+
+.navbar-center{
+    flex:1;
+   
+}
+
+.navbar-right{
+    flex:1;
     display: flex;
     justify-content: flex-end;
-    margin-left: auto;
+    margin:0 -5px;
+    
+    
+}
+.nav-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0 5px;
+    
 }
 
-#social-media-links li {
+
+.social-media-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-links .link {
     list-style: none;
     display: inline;
-    font-size: 20px;
+    font-size: 1.5rem;
+    margin-left: 10px;
 }
 
-#social-media-links li a {
+.social-media-links li  #github-icon,#twitter-icon, #linkedin-icon {
     text-decoration: none;
     color: black;
+
 }
+.social-media-links .link .primary-links{
+    text-decoration: none;
+}
+
+
+
+
 
 
 /* content */
 
-.description p {
-    font-size: 1.2rem;
-    margin: 1rem 0;
-}
 
-.installation-para {
-    font-size: 18px;
-    margin: 1rem 0;
+.main-container{
+   text-align: center;
+   padding-top: 6rem;
+ 
 }
-
-.home-code-snippet {
+.main-heading{
+    font-size: 3.5rem;
+    font-weight:bold;
+    width:80%;
+    max-width:700px;
+    text-align: center;
+    margin:auto;
+    
+  
+}
+.main-paragraph{
+    font-size: 1.5rem;
+    margin: auto;
+    text-align: center;
+    width:95%;
+    max-width: 750px;
+    line-height: 2rem;
+    padding:1rem;
+}
+.main-buttons{
     display: flex;
-    justify-content: center;
-    margin-top: 30px;
+    justify-content: space-evenly;
+    margin:auto;
+    width:300px;
 }
+.github-button{
+    padding:1rem;
+    border:none;
+    background-color:#56BBF1;
+    cursor:pointer;
+    border-radius: 5px;
+    
 
 
+}
+.get-started-button{
+    background-color:var(--primary-color);
+    padding:1rem;
+    cursor:pointer;
+    border:none;
+    border-radius: 5px;
+}
+.get-started-link{
+    color:white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.github-link{
+    color:white;
+    text-decoration: none;
+    font-size: 1rem;
+}
 /* media queries */
 
-@media only screen and (min-width: 1200px) {
-    #sidebar-menu {
-        width: 250px;
-    }
-    #main,
-    #home,
-    .footer {
-        margin-left: 250px;
-    }
-    #open-Btn,
-    .library-sidebar .close-Btn {
-        display: none;
-    }
-    #hero,
-    #social-media-links li {
-        font-size: 2rem;
-        line-height: 45px;
-    }
-}

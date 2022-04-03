@@ -8,6 +8,7 @@
     <link href="./img.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/css/component.css">
     <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/components/gettingStarted/gettingStarted.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Inter:wght@200;400;600;700&family=Mulish&family=Nunito+Sans:wght@300&family=Ubuntu:wght@300&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
 <body>
     <!-- Responsive sidebar -->
     <nav class="library-sidebar" id="sidebar-menu">
-        <a href="/home/index.html" id="home-page">Getting Started</a>
+        <a href="/components/gettingStarted/gettingStarted.html" id="home-page">Getting Started</a>
         <a href="#" class="close-Btn" onclick="closeBar()">×</a>
         <ul>
 
@@ -37,7 +38,7 @@
                 <a href="/components/card/card.html">Card</a>
             </li>
             <li>
-                <a href="/components/image component/img.html">Image</a>
+                <a href="/components/image component/img.html" id="active-link">Image</a>
             </li>
             <li>
                 <a href="/components/input/input.html">Input</a>
@@ -62,6 +63,30 @@
 
     <div id="main">
         <span class='material-icons' id="open-Btn" onClick="openBar()">menu</span>
+        <a href="/home//index.html" class="hero-link">
+            <div class="hero">Ornate UI</div>
+        </a>
+    
+    <div class="social-media-links">
+        <ul>
+            <li class="link">
+                <a href="https://github.com/preethasri" class="primary-links" target="blank">
+                    <i class='fa fa-github' id="github-icon"></i>
+                </a>
+            </li>
+            <li class="link">
+                <a href="https://www.linkedin.com/in/preetha-s-2a9637217/" class="primary-links" target="blank">
+                    <i class='fa fa-linkedin-square' id="linkedin-icon"></i>
+                </a>
+            </li>
+            <li class="link">
+                <a href="https://twitter.com/Preethasri6" class="primary-links" target="blank">
+                    <i class='fa fa-twitter' id="twitter-icon"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
     </div>
     <!-- image  -->
     <header id="heading">

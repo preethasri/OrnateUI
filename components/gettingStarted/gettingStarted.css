@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+@import url("/components/avatar/avatar.css");
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+*{
+    --primary-color:#4D77FF;
+}
+
+/* header nav */
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.social-media-links .link {
+    list-style: none;
+    display: inline;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+ #github-icon {
+    text-decoration: none;
+    color: black;
+}
+#linkedin-icon{
+    text-decoration: none;
+    color:black;
+}
+#twitter-icon{
+    text-decoration: none;
+    color:black;
+}
+.social-media-links .link .primary-links{
+    text-decoration: none;
+}
+
+/* content */
+.hero{
+    color:black;
+    font-size: 2rem;
+}
+.hero-link{
+    text-decoration:none;
+}
+.description p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.installation-para {
+    font-size: 18px;
+    margin: 1rem 0;
+}
+
+.home-code-snippet {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.getting-started-link{
+    color:var(--primary-color);
+}
+
+/* media queries */
+
+@media only screen and (min-width: 1200px) {
+    #sidebar-menu {
+        width: 250px;
+    }
+    #main,
+    #home,
+    .footer {
+        margin-left: 250px;
+    }
+    #open-Btn,
+    .library-sidebar .close-Btn {
+        display: none;
+    }
+    
+}
+@media only screen and (max-width:600px){
+    .hero,.social-media-links .link {
+        font-size:1rem;
+    }
+}

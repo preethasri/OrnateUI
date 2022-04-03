@@ -1,3 +1,7 @@
+*{
+    --primary-color:#4D77FF;
+    --secondary-color:blueviolet;
+}
 .library-sidebar {
     height: 100%;
     width: 0;
@@ -7,23 +11,25 @@
     left: 0;
     overflow-x: hidden;
     transition: 0.5s;
+
 }
 
 #home-page {
     font-weight: bold;
+    
 }
 
 .library-sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    color: black;
+    color:black;
     transition: 0.3s;
     display: block;
     font-size: 1.2rem;
 }
 
-.library-sidebar a:hover {
-    color: #ff7416;
+
+.library-sidebar a:hover{
     font-weight: bold;
     margin-left: 5px;
 }
@@ -36,7 +42,13 @@
     margin-left: 50px;
 }
 
+#active-link{
+    font-weight: 900;
+    color:var(--secondary-color)
+    
 
+
+}
 /* hamburger menu */
 
 .open-Btn {
