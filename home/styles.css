@@ -171,4 +171,10 @@ body {
     .navbar-container{
         width:100%;
     }
+    .home-link,.documentation-link{
+        display: none;
+    }
+   .navbar-container{
+       height:70px;
+   }
 }
