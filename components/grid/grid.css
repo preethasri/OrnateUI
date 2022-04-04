@@ -1,0 +1,88 @@
+*{
+    --grid-border-color:dodgerblue;
+}
+
+.two-column-grid-container{
+    display:grid;
+    grid-template-areas: 'one two'
+                        'three four';
+                        grid-gap:10px;
+   
+}
+.two-column-grid-container .one,.two-column-grid-container .two,.two-column-grid-container .three , .two-column-grid-container .four{
+    padding:10px;
+    text-align: center;
+    
+    border: 1px solid var(--grid-border-color);
+   
+}
+
+.three-column-grid-container{
+    display: grid;
+    grid-template-areas: "one two three"
+                         "four five six"
+                         "seven eight nine";
+                         grid-gap:10px;
+}
+.three-column-grid-container .one,.three-column-grid-container .two,.three-column-grid-container .three,.three-column-grid-container .four,.three-column-grid-container .five,.three-column-grid-container .six,.three-column-grid-container .seven, .three-column-grid-container .eight ,.three-column-grid-container .nine{
+    padding:10px;
+    text-align: center;
+    border:1px solid var(--grid-border-color);
+    
+}
+
+
+.common-layout-grid-container >*{
+    display: flex;
+    border: 1px solid var(--grid-border-color);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding:24px;
+    font-size: 1.5rem;
+}
+.common-layout-grid-container{
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: 200px 1fr 200px ;
+    grid-template-areas: "header header header "
+                          "left  main  right "
+                          "left  main  right"
+                          "left main  right "
+                          "footer footer footer "
+}
+.grid-header{
+    color:indigo;
+    grid-area: header;
+    
+}
+.grid-aside-left{
+    color: maroon;
+    grid-area: left;
+    
+}
+.grid-main{
+    color:blue;
+    grid-area: main;
+
+}
+.grid-aside-right{
+    color:palevioletred;
+    grid-area: right;
+    
+}
+.grid-footer{
+    color:orangered;
+    grid-area: footer;
+
+}
+@media only screen and (max-width:600px){
+    .common-layout-grid-container{
+        grid-template-columns: 1fr;
+        grid-template-areas: "header"
+                             "left"
+                             "main"
+                             "right"
+                             "footer"
+    }
+}
