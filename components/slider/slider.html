@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>image</title>
-    <link href="./img.css" rel="stylesheet" type="text/css" />
+    <title>Slider</title>
+    <link href="slider.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/css/component.css">
     <link rel="stylesheet" href="/css/sidebar.css">
     <link rel="stylesheet" href="/components/gettingStarted/gettingStarted.css">
@@ -17,8 +17,12 @@
 <body>
     <!-- Responsive sidebar -->
     <nav class="library-sidebar" id="sidebar-menu">
+
         <a href="/components/gettingStarted/gettingStarted.html" id="home-page">Getting Started</a>
         <a href="#" class="close-Btn" onclick="closeBar()">×</a>
+
+
+
         <ul>
 
             <li>
@@ -38,7 +42,7 @@
                 <a href="/components/card/card.html">Card</a>
             </li>
             <li>
-                <a href="/components/image component/img.html" id="active-link">Image</a>
+                <a href="/components/image component/img.html">Image</a>
             </li>
             <li>
                 <a href="/components/input/input.html">Input</a>
@@ -56,20 +60,21 @@
                 <a href="/components/snackbar/snackbar.html">snackbar</a>
             </li>
             <li>
-                <a href="/components/ratings/rating.html">Ratings</a>
-                </li>
-                <li>
-                    <a href="/components/navigation/navigation.html"  >Navigation</a>
-                </li>
-                <li>
-                    <a href="/components/grid/grid.html">Grids</a>
-                </li>
-                <li>
-                    <a href="/components/dropdownmenu/dropdownmenu.html">Dropdown-Nav</a>
-                </li>
-                <li>
-                    <a href="/components/slider/slider.html" >Slider</a>
-                </li>
+                <a href="/components/ratings/rating.html" >Ratings</a>
+            </li>
+            <li>
+                <a href="/components/navigation/navigation.html"  >Navigation</a>
+            </li>
+           
+            <li>
+                <a href="/components/grid/grid.html">Grids</a>
+            </li>
+            <li>
+                <a href="/components/dropdownmenu/dropdownmenu.html" >DropdownMenu</a>
+            </li>
+            <li>
+                <a href="/components/slider/slider.html" id="active-link">Slider</a>
+            </li>
         </ul>
 
     </nav>
@@ -101,39 +106,44 @@
     </div>
 
     </div>
-    <!-- image  -->
+    <!-- navbar -->
     <header id="heading">
-        <div class="component-title">
-            Images
-        </div>
-        <div class="component-description">
-            Images play an important role in any webpage. CSS plays a good role to control image display. You can set the following image properties using CSS
-        </div>
+        <div class="component-title">Slider</div>
+        <div class="component-description">A range slider is an input field that merchants can use to select a numeric value within a given range (minimum and maximum values). </div>
     </header>
     <main id="container">
-        <div class="side-heading">Responsive Image</div>
-        <div class="side-heading-description">To make an image responsive, you need to give a new value to its width property. Then the height of the image will adjust itself automatically</div>
-
-        <div class="images">
-
-            <img src="/Assests/natureImg.jpg" alt="" id="res-image">
-
+        <div class="side-heading ">slider with icon</div>
+        <div class="slider-with-icon"> 
+            <i class="fa fa-volume-up"></i>
+            <input type="range" min="0" max="100" />
+                
         </div>
         <div class="code-snippet">
-            <embed src="https://carbon.now.sh/embed?bg=rgba%28189%2C16%2C224%2C1%29&t=vscode&wt=none&l=htmlmixed&width=608.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=177%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522natureImg.jpg%2522%2520alt%253D%2522%2522%2520id%253D%2522res-image%2522%253E"
-                style="width: 608px; height: 85px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+           <embed src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ci%2520class%253D%2522fa%2520fa-volume-up%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522range%2522%2520min%253D%25220%2522%2520max%253D%2522100%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+           style="width: 460px; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+           sandbox="allow-scripts allow-same-origin" >
         </div>
-        <div class="side-heading">Round Image</div>
-        <div class="side-heading-description">The main CSS property responsible for the circular shape is the border-radius property. Setting the radius of the corners to 50% of the width/height results in a circle.</div>
-        <div class="images">
-
-            <img src="/Assests/natureImg.jpg" alt="" id="round-image">
-
+        <div class="side-heading"> disabled slider</div>
+        <div class="disabled-slider">
+            <i class="fa fa-volume-up"></i>
+            <input type="range" min="0" max="100"  disabled="true"/>
         </div>
         <div class="code-snippet">
-            <embed src="https://carbon.now.sh/embed?bg=rgba%28189%2C16%2C224%2C1%29&t=vscode&wt=none&l=htmlmixed&width=608.25&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=15.5px&lh=177%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522natureImg.jpg%2522%2520alt%253D%2522%2522%2520id%253D%2522round-image%2522%253E"
-                style="width: 608px; height: 85px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin" type="">
+           <embed src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-volume-up%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522range%2522%2520min%253D%25220%2522%2520max%253D%2522100%2522%2520%2520disabled%253D%2522true%2522%252F%253E"
+           style="width: 595px; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+           sandbox="allow-scripts allow-same-origin">
         </div>
+        
+        <div class="side-heading">Styled-slider</div>
+        <div class="styled-slider"> 
+            <input type="range" min="0" max="100"  class="round-slider" value="15 "/>
+        </div>    
+        <div class="code-snippet">
+           <embed src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cinput%2520type%253D%2522range%2522%2520min%253D%25220%2522%2520max%253D%2522100%2522%2520%2520class%253D%2522round-slider%2522%252F%253E"
+           style="width: 553px; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+           sandbox="allow-scripts allow-same-origin" >
+        </div>
+        
     </main>
     <script>
         function openBar() {
@@ -151,6 +161,5 @@
             document.getElementById("open-Btn").style.marginLeft = "0px";
         }
     </script>
-</body>
-
-</html>
+    </body>
+    </html>
