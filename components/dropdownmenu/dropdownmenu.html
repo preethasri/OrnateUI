@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>DropdownMenu</title>
+    <link href="dropdown.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/css/component.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/components/gettingStarted/gettingStarted.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Inter:wght@200;400;600;700&family=Mulish&family=Nunito+Sans:wght@300&family=Ubuntu:wght@300&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Responsive sidebar -->
+    <nav class="library-sidebar" id="sidebar-menu">
+
+        <a href="/components/gettingStarted/gettingStarted.html" id="home-page">Getting Started</a>
+        <a href="#" class="close-Btn" onclick="closeBar()">×</a>
+
+
+
+        <ul>
+
+            <li>
+                <a href="/components/avatar/avatar.html">Avatar</a>
+            </li>
+            <li>
+                <a href="/components/alert/alert.html">Alert</a>
+
+            </li>
+            <li>
+                <a href="/components/badge/badge.html">Badge</a>
+            </li>
+            <li>
+                <a href="/components/button/button.html">Button</a>
+            </li>
+            <li>
+                <a href="/components/card/card.html">Card</a>
+            </li>
+            <li>
+                <a href="/components/image component/img.html">Image</a>
+            </li>
+            <li>
+                <a href="/components/input/input.html">Input</a>
+            </li>
+            <li>
+                <a href="/components/modal/modal.html">Modal</a>
+            </li>
+            <li>
+                <a href="/components/list/list.html">List</a>
+            </li>
+            <li>
+                <a href="/components/textUtilities/textUtilities.html">Text Utilities</a>
+            </li>
+            <li>
+                <a href="/components/snackbar/snackbar.html">snackbar</a>
+            </li>
+            <li>
+                <a href="/components/ratings/rating.html" >Ratings</a>
+            </li>
+            <li>
+                <a href="/components/navigation/navigation.html"  >Navigation</a>
+            </li>
+           
+            <li>
+                <a href="/components/grid/grid.html">Grids</a>
+            </li>
+            <li>
+                <a href="/components/dropdownmenu/dropdown.html" id="active-link">Dropdown-Nav</a>
+            </li>
+           
+            <li>
+                <a href="/components/slider/slider.html" >Slider</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div id="main">
+        <span class='material-icons' id="open-Btn" onClick="openBar()">menu</span>
+        <a href="/home//index.html" class="hero-link">
+            <div class="hero">Ornate UI</div>
+        </a>
+    
+    <div class="social-media-links">
+        <ul>
+            <li class="link">
+                <a href="https://github.com/preethasri" class="primary-links" target="blank">
+                    <i class='fa fa-github' id="github-icon"></i>
+                </a>
+            </li>
+            <li class="link">
+                <a href="https://www.linkedin.com/in/preetha-s-2a9637217/" class="primary-links" target="blank">
+                    <i class='fa fa-linkedin-square' id="linkedin-icon"></i>
+                </a>
+            </li>
+            <li class="link">
+                <a href="https://twitter.com/Preethasri6" class="primary-links" target="blank">
+                    <i class='fa fa-twitter' id="twitter-icon"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    </div>
+    <!-- navbar -->
+    <header id="heading">
+        <div class="component-title">Dropdown Navbar</div>
+        <div class="component-description">A dropdown menu is a toggleable menu that allows the user to choose one value from a predefined list </div>
+    </header>
+    <main id="container">
+        <div class="side-heading ">Example of Dropdown</div>
+        <div>
+            <div class="dropdown-menu-navbar">
+                <div class="dropdown-nav-left">
+                  <a href="#">Home</a>
+                  <a href="#">Products</a>
+                </div>
+                <div class="dropdown">
+                   <div class="dropdown-nav-right">
+                    <button class="dropdown-btn">
+                       <i class="fa fa-user"></i>
+                    </button>
+                  <div class="dropdown-list">
+                     <a href="#">address</a>
+                     <a href="#">profile</a>
+                     <a href="#">logout</a>
+                  </div>
+                     <i class="fa fa-heart"></i>
+                     <i class="fa fa-shopping-cart"></i>
+                   </div>
+                </div>
+              </div>
+              <div>
+                 
+              </div>
+                
+        </div>
+            
+        
+        <div class="code-snippet">
+           <embed src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=vscode&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522dropdown-menu-navbar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-nav-left%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253EHome%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253EProducts%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-nav-right%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522dropdown-btn%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-user%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-list%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253Eaddress%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253Eprofile%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253Elogout%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+           style="width: 640px; height: 486px; border:0; transform: scale(1); overflow:hidden;"
+           sandbox="allow-scripts allow-same-origin">
+        </div>
+    </main>
+    <script>
+        function openBar() {
+            document.getElementById("sidebar-menu").style.width = "250px";
+            document.getElementById("heading").style.marginLeft = "250px";
+            document.getElementById("container").style.marginLeft = "250px"
+            document.getElementById("open-Btn").style.marginLeft = "250px";
+
+        }
+
+        function closeBar() {
+            document.getElementById("sidebar-menu").style.width = "0";
+            document.getElementById("heading").style.marginLeft = "0";
+            document.getElementById("container").style.marginLeft = "0";
+            document.getElementById("open-Btn").style.marginLeft = "0px";
+        }
+    </script>
+    </body>
+    </html>
